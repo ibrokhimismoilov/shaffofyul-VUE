@@ -1,0 +1,211 @@
+
+.statistics {
+  height: 100%;
+  background-color: #f8fafe;
+  padding-top: 6rem;
+  position: relative;
+  
+  .dot{
+    position: absolute;
+  }
+
+  .big1{
+    top: 25rem;
+    right: 1rem;
+  }
+  
+  .big2{
+    top: 295rem;
+    left: 0;
+  }
+
+  .little1{
+    top: 95rem;
+    left: 14rem;
+  }
+
+  .little2{
+    top: 185rem;
+    right: 17rem;
+  }
+
+
+  
+  
+  
+  &__heading {
+    margin-bottom: 8rem;
+    .listHeading {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 3.2rem;
+      line-height: 40px;
+      color: #333333;
+      width: 61.3rem;
+    }
+   
+    .listSub {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.1rem;
+      line-height: 25px;
+      color: #2f2f2f;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .statistic {
+    box-shadow: 0px 2px 29px rgba(117, 128, 151, 0.06);
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1.6rem;
+    z-index: 1 !important;
+
+
+    &:hover {
+      transform: scale(1.04);
+      box-shadow: 0px 20px 40px rgba(117, 128, 151, 0.15);
+      border-radius: 10px;
+    }
+    &:hover .thumbali {
+      background-color: #3be300;
+    }
+    &:hover .info {
+      font-weight: bold;
+    }
+
+    &:hover .moneyAmount .money {
+      color: #e00051;
+    }
+    &:hover .moneyAmount .period {
+      display: block;
+    }
+
+    .thumbali {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 43px;
+      height: 43px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2.1rem;
+      line-height: 150%;
+      border-radius: 50%;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .info {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.1rem;
+      line-height: 150%;
+      color: #000000;
+      padding: 0 3rem;
+      width: 78rem;
+      border-right: 1px solid rgba(0, 0, 0, 0.16);
+    }
+
+    .moneyAmount {
+      display: flex;
+      align-items: flex-start;
+      margin: 0 auto;
+      justify-content: flex-end;
+      position: relative;
+
+      .period {
+        position: absolute;
+        display: none;
+        bottom: -0.8rem;
+        left: 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #474747;
+        // transition: all .3s ease;
+        animation: moveInBottom 0.3s ease;
+      }
+      .money {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 150%;
+        color: #474747;
+      }
+      .currency {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 150%;
+        margin-left: 1.4rem;
+      }
+    }
+  }
+  .lightGrey {
+    background-color: #d6d6d6;
+  }
+
+  .dolphin{
+    background-color: #36CFCF;
+  }
+  .pink{
+      background-color: #FFB1B1;
+  }
+  .purple{
+      background-color: #C39AF6;
+  }
+  .grass{
+      background-color: #DAEF5A;
+  }
+
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.heading1 {
+  position: relative;
+  font-family: $gilroy, Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+  color: #333333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: red;
+  }
+}

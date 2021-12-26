@@ -1,0 +1,207 @@
+.contactUs {  
+  height: 90rem;
+
+  .title {
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 4.5rem;
+  }
+
+  .contactForm {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__inputs {
+      .name {
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        display: flex;
+        align-items: center;
+        border: 2px solid rgba(0, 49, 176, 0.17);
+        padding: 1.2rem;
+        &--comment {
+          align-items: flex-start;
+        }
+        border-radius: 5px;
+        &__icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          background-color: #f7f7f7;
+          width: 4.5rem;
+          height: 4.5rem;
+
+          span {
+            svg {
+              width: 3rem;
+              height: 3rem;
+            }
+          }
+        }
+
+        .username {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          padding: 0 1.2rem;
+
+          &__label {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: rgba(0, 0, 0, 0.45);
+            transition: all 0.3s ease;
+            position: absolute;
+            top: -10px;
+            opacity: 1;
+          }
+          textarea {
+            height: 26rem;
+          }
+          &__input {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+            width: 53.3rem;
+            height: 100%;
+            border: none;
+            font-size: 1.8rem;
+            margin-top: 1rem;
+
+            &::-webkit-input-placeholder {
+              color: rgba(0, 0, 0, 0.45);
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .username__input:placeholder-shown ~ .username__label {
+          top: 0;
+          opacity: 0;
+        }
+      }
+      position: relative;
+
+      .submitBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7.6rem;
+        position: absolute;
+        right: 0;
+        padding: 2rem 5rem;
+        width: 15rem;
+        background-color: #2b3b57;
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.2rem;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #ffffff;
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover{
+          background-color: #3BE300;
+        }
+       
+
+        p {
+          transition: all 0.2s ease;
+          margin-right: 1.2rem;
+          letter-spacing: 2px;
+          transform: translateY(-1.2px);
+        }
+      }
+    }
+
+    &__image {
+      span {
+        position: absolute;
+        top: 4rem;
+        right: 2rem;
+      }
+    }
+  }
+
+  .border {
+    transition: all 0.1s ease;
+    border-color: rgba(1, 72, 255, 0.65) !important;
+  }
+}
+
+// Footer
+.footer {
+  height: 8rem;
+  background-color: #2a1e48;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem;
+  }
+
+  &__logoBox {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 2.6rem;
+    }
+
+    a {
+      list-style: none;
+      text-decoration: none;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      font-variant: small-caps;
+      color: #ffffff;
+    }
+  }
+
+  .upBtn{
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    svg {
+      transition: all .3s ease;
+    }
+    &:hover{
+      background-color: #3BE300;
+
+      svg{
+        path{
+          fill: #fff;
+        }
+      }
+
+    }
+
+    
+
+  }
+
+}

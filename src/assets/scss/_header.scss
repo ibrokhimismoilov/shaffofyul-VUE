@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400;1,500&display=swap");
+.header {
+  background-color: #f8fafe;
+  background-image: url(../images/headerBackground.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  &__heading {
+    padding-top: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 130px !important; //Take a look
+    .logoBox {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &__logo {
+        border-right: 1px solid #ffffff;
+        padding-right: 1.2rem;
+      }
+
+      &__name {
+        padding-left: 1.2rem;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16.0656px;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      padding: 1.2rem 2.4rem;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 5.7rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: #3be300;
+        border-color: #3be300;
+      }
+      p {
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.1rem;
+        text-transform: uppercase;
+        padding-right: 1.4rem;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .introduction {
+      width: 100%;
+      &__heading {
+        font-family: $gilroy, Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 42px;
+        color: #ffffff;
+        margin-bottom: 1rem;
+      }
+      
+      &__subHeading {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #ffffff;
+        margin-bottom: 4.5rem;
+      }
+
+      &__btns {
+        display: flex;
+
+        p a {
+          text-decoration: none;
+          padding: 2rem 3.2rem;
+          color: #fff;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase;
+          border: 2px solid #fff;
+          border-radius: 50px;
+          transition: all 0.3s ease-out;
+          &:first-child {
+            margin-right: 2rem;
+          }
+
+          &:hover {
+            background-color: #3be300;
+            border-color: #3be300;
+          }
+        }
+      }
+    }
+
+    .constructors {
+      svg {
+        width: 60rem;
+        height: 100%;
+        transform: scale(1.95) translateY(70px);
+        padding-left: 50px;
+      }
+    }
+  }
+}
