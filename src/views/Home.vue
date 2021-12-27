@@ -1,720 +1,690 @@
 <template>
-  <div class="home">
-    <div id="header" class="header">
-      <div class="container header__heading">
-        <div class="logoBox">
-          <img
-            src="../assets/images/whiteLogo.png"
-            alt="logo"
-            class="logoBox__logo"
-          />
-          <p class="logoBox__name">
-            Shaffofyul <br />
-            Development
-          </p>
-        </div>
-        <div class="navigation" @click="showNav = !showNav">
-          <p>Статистика</p>
-          <span v-html="navigationIcon"></span>
-        </div>
-      </div>
-      <div class="header__content container">
-        <div class="introduction">
-          <p class="introduction__heading">
-            Ўзбекистондаги энг йирик йўл қурилиши харитаси статистикаси
-          </p>
+	<div class="home">
+		<div id="header" class="header">
+			<div class="container header__heading">
+				<div class="logoBox">
+					<img src="../assets/images/whiteLogo.png" alt="logo" class="logoBox__logo" />
+					<p class="logoBox__name">
+						Shaffofyul <br />
+						Development
+					</p>
+				</div>
+				<div class="navigation" @click="showNav = !showNav">
+					<p>Статистика</p>
+					<span v-html="navigationIcon"></span>
+				</div>
+			</div>
+			<div class="header__content container">
+				<div class="introduction">
+					<p class="introduction__heading">Ўзбекистондаги энг йирик йўл қурилиши харитаси статистикаси</p>
 
-            <p class="introduction__subHeading">
-              Барча статистик маълумотларни куриш имкони
+					<p class="introduction__subHeading">Барча статистик маълумотларни куриш имкони</p>
+
+					<div class="introduction__btns">
+						<p><a href="#contactUs">Қайта алоқага чиқиш</a></p>
+					</div>
+				</div>
+				<div class="constructors">
+					<span v-html="constructors"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="navigationLists" :class="{ showIt: showNav }">
+			<div class="container">
+				<div class="listHeading">
+					<div class="logoBox">
+						<img src="../assets/images/logoDark.png" alt="logo" class="logoBox__logo" />
+						<p class="logoBox__name">
+							Shaffofyul <br />
+							Development
+						</p>
+					</div>
+
+					<div class="close" @click="showNav = false">
+						<span v-html="close"></span>
+					</div>
+				</div>
+				<div class="lists">
+					<div class="leftSide">
+						<p class="item">
+							<a @click="showNav = false" href="#l1">
+								Республика ва ҳудудий жамғармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблағлар
+							</a>
+						</p>
+						<p class="item">
+							<a @click="showNav = false" href="#l2"> Автомобиль йўллари соҳасига ажратиладиган ҳалкаро молия институтлар маблағлари </a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l3">
+								Автомобиль йўллари соҳасига Ўзбекистон Республикасининг Тикланиш ва тараққиёт жамғармаси ажратмалари
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l4">
+								Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли
+								маблағлар
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l5">
+								Respublika va hududiy jamgarmalarga respublika byudjetidan har йил ajratiladigan maqsadli mablaglar
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l6">
+								Umumiyfoydalanishdagi avtomobil yo’llarining ajratilgan mintaqalarida joylashgan yer uchastkalarida va inshootlarida tashqi
+								reklama obyektlari (konstruksiyalari) qurish uhun elektron auksionlar yakunlari bo’yicha huquq taqdim etishda tushadigan
+								mablag’lar, shuningdek, tashqi reklamalarning o’rnatilgan obyektlari (konstruksiyalari) uchun oylik to’lovlar
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l7">
+								Умумий фойдаланишдаги автомобиль йўлларининг ажратилган минтақаларида жойлашган ер участкаларида ва иншоотларида ташқи реклама
+								объектлари (конструкциялари) қуриш учун электрон аукционлар якунлари бўйича ҳуқуқ тақдим этишдан тушадиган маблағлар, шунингдек,
+								ташқи рекламанинг ўрнатилган объектлари (конструкциялари) учун ойлик тўловлар
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l8">
+								Умумий фойдаланишдаги автомобиль йўлларининг йўл бўйи минтақасида жойлашган ер участкаларида ишлаб чиқариш, хизматлар кўрсатиш,
+								савдо, сервис объектлари, шунингдек, тадбиркорлик фаолиятининг бошқа объектларини жойлаштириш ва қуриш учун мазкур ер
+								участкаларидан фойдаланиш ҳуқуқини реализация қилишдан тушадиган маблағлар
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l9">
+								Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда амалга оширилаётган ишлар тўғрисида батафсил маълумот
+								(йўлларни лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l10">
+								Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
+								учун ажратилган маблағлар тўғрисида маълумот
+							</a>
+						</p>
+					</div>
+
+					<div class="leftSide">
+						<p class="item">
+							<a @click="showNav = false" href="#l11">
+								Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
+								тўғрисида маълумот
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l12">
+								(Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция
+								дастурлари ижроси бўйича маълумотлар
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l13">
+								Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
+								уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатномалар тўғрисида
+								маълумотлар
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l14">
+								Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
+								уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатнома талабларини
+								бажармаслик, шунингдек йўлларни сақлаш қоидаларини бузиш ҳолатлари бўйича маълумотлар
+							</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l15"> Утказилган тендерлар сони ва тежалган маблаг суммаси </a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l16"> 1км йул куриш уртача бозор нархи </a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l17"> Йил давомида таъмирланган ва курилган йуллар хакида маълумот (км) </a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l18"> Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган таъмирталаб йуллар </a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l19"> Ички йуллар хакида маълумот (3 йиллик йул харитаси) </a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l20"> Асфальт ишлаб чикарувчи корхоналар </a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="statistics" id="statistics">
+			<img src="../assets/images/dot.png" class="dot big1" alt="Dot" />
+			<img src="../assets/images/dotL.png" class="dot little1" alt="Dot" />
+			<img src="../assets/images/dot.png" class="dot big2" alt="Dot" />
+			<img src="../assets/images/dotL.png" class="dot little2" alt="Dot" />
+
+			<span v-html="dot"></span>
+			<div class="container">
+				<div class="statistics__heading">
+					<p class="heading1">Aвтомобил йўллари соҳасидаги очиқ статистикалар рўйхати</p>
+				</div>
+				<div class="statistic">
+					<p class="info" id="l1">
+						<span class="thumbali lightGrey">1 </span>
+						<span> Республика ва ҳудудий жамғармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблағлар</span>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l2">
+						<span class="thumbali dolphin">2</span>
+						<span> Автомобиль йўллари соҳасига ажратиладиган ҳалкаро молия институтлар маблағлари</span>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l3">
+						<span class="thumbali pink">3</span>
+						<span> Автомобиль йўллари соҳасига Ўзбекистон Республикасининг Тикланиш ва тараққиёт жамғармаси ажратмалари</span>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l4">
+						<span class="thumbali purple">4</span>
+						<span>
+							Автомобиль йўллари ва кўчалар бўйлаб автомобиль сақлаш жойларидан фойдаланганлик учун тўловлардан келиб тушадиган маблағлар</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l5">
+						<span class="thumbali grass">5</span>
+						<span>
+							Транспорт воситаларини техник кўрикдан ўтказиш учун йиғимнинг базавий ставкасига қўшимча коэффициентларни қўллашдан тушадиган
+							маблағлар</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l6">
+						<span class="thumbali lightGrey">6</span>
+						<span> Ҳудудий жамғармаларга Республика жамғармасидан трансфертлар</span>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l7">
+						<span class="thumbali purple">7</span>
+						<span>
+							Умумий фойдаланишдаги автомобиль йўлларининг ажратилган минтақаларида жойлашган ер участкаларида ва иншоотларида ташқи реклама
+							объектлари (конструкциялари) қуриш учун электрон аукционлар якунлари бўйича ҳуқуқ тақдим этишдан тушадиган маблағлар, шунингдек,
+							ташқи рекламанинг ўрнатилган объектлари (конструкциялари) учун ойлик тўловлар</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l8">
+						<span class="thumbali grass">8</span>
+						<span>
+							Умумий фойдаланишдаги автомобиль йўлларининг йўл бўйи минтақасида жойлашган ер участкаларида ишлаб чиқариш, хизматлар кўрсатиш,
+							савдо, сервис объектлари, шунингдек, тадбиркорлик фаолиятининг бошқа объектларини жойлаштириш ва қуриш учун мазкур ер участкаларидан
+							фойдаланиш ҳуқуқини реализация қилишдан тушадиган маблағлар</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l9">
+						<span class="thumbali pink">9</span>
+						<span>
+							Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда амалга оширилаётган ишлар тўғрисида батафсил маълумот (йўлларни
+							лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l10">
+						<span class="thumbali purple">10</span>
+						<span>
+							Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари учун
+							ажратилган маблағлар тўғрисида маълумот</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l11">
+						<span class="thumbali lightGrey">11</span>
+						<span>
+							Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
+							тўғрисида маълумот</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l12">
+						<span class="thumbali dolphin">12</span>
+						<span>
+							(Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция
+							дастурлари ижроси бўйича маълумотла</span
+						>
+						р
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l13">
+						<span class="thumbali pink">13</span>
+						<span>
+							Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
+							уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатномалар тўғрисида
+							маълумотлар</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l14">
+						<span class="thumbali lightGrey">14</span>
+						<span>
+							Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
+							уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатнома талабларини
+							бажармаслик, шунингдек йўлларни сақлаш қоидаларини бузиш ҳолатлари бўйича маълумотлар</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l15">
+						<span class="thumbali grass">15</span>
+						<span> Утказилган тендерлар сони ва тежалган маблаг суммаси</span>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l16">
+						<span class="thumbali purple">16</span>
+						<span> 1 км йул куриш уртача бозор нархи</span>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l17">
+						<span class="thumbali pink">17</span>
+						<span> Йил давомида таъмирланган ва курилган йуллар хакида маълумот (км)</span>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l18">
+						<span class="thumbali grass">18</span>
+						<span> Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган таъмирталаб йуллар</span>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l19">
+						<span class="thumbali lightGrey">19</span>
+						<span> Ички йуллар хакида маълумот (3 йиллик йул харитаси)</span>
+					</p>
+
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l20">
+            <span class="thumbali pink">20</span>
+            <span>
+                Асфальт ишлаб чикарувчи корхоналар
+              </span>
             </p>
 
-          <div class="introduction__btns">
-            <p><a href="#contactUs">Қайта алоқага чиқиш</a></p>
-          </div>
-        </div>
-        <div class="constructors">
-          <span v-html="constructors"></span>
-        </div>
-      </div>
-    </div>
+					<div class="moneyAmount">
+						<p class="money">2.4B</p>
+						<span class="currency">uzs</span>
+						<span class="period">2006-2021 йиллар</span>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <div class="navigationLists" :class="{'showIt' : showNav} "  >
-      <div class="container">
-        <div class="listHeading">
-          <div class="logoBox">
-            <img
-              src="../assets/images/logoDark.png"
-              alt="logo"
-              class="logoBox__logo"
-            />
-            <p class="logoBox__name">
-              Shaffofyul <br />
-              Development
-            </p>
-          </div>
+		<div class="comparision">
+			<div class="container">
+				<p class="heading1">Қиёслаш</p>
+				<div class="comparisionContent">
+					<div class="information">
+						Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли
+						маблағлар
+					</div>
+					<div class="compareThem">
+						<div class="last">
+							<p class="year  year--adjust">2021 йил</p>
+							<p class="amount amount--last last">1 109,8mlrd сўм</p>
+						</div>
+						<div class="last">
+							<p class="year  year--adjust">2022 йил</p>
+							<p class="amount amount--new new1">1220,7mlrd сўм</p>
+						</div>
+					</div>
+				</div>
 
-          <div class="close" @click="showNav = false">
-            <span v-html="close"></span>
-          </div>
-        </div>
-        <div class="lists">
+				<div class="comparisionContent">
+					<div class="information">
+						Ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчалари учун махаллий вакиллик ҳокимияти органлари томонидан ажратилган маблаг
+						(жорий этиладиган йиғимлардан тушумлар)
+					</div>
+					<div class="compareThem">
+						<div class="last">
+							<p class="year  year--adjust">2021 йил</p>
+							<p class="amount amount--last last">3045,1км</p>
+						</div>
+						<div class="last">
+							<p class="year  year--adjust">2022 йил</p>
+							<p class="amount amount--new new1">3349,6км</p>
+						</div>
+					</div>
+				</div>
 
-          <div class="leftSide">
-          <p class="item">
-            <a @click='showNav = false' href="#l1">
-             Республика ва ҳудудий жамғармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблағлар
-            </a>
-          </p>
-          <p class="item">
-            <a @click='showNav = false' href="#l2">
-              Автомобиль йўллари соҳасига ажратиладиган ҳалкаро молия институтлар маблағлари
-            </a>
-          </p>
+				<div class="comparisionContent">
+					<div class="information">
+						Автомобиль йўлларини қуриш, қайта қуриш, реконструкция қилиш ва таъмирлаш объектларида олиб борилаётган йўл қурилиш ишлари ҳақида
+						маълумотлар
+					</div>
+					<div class="compareThem">
+						<div class="last">
+							<p class="year  year--adjust">2021 йил</p>
+							<p class="amount amount--last new1">586 687млн сум</p>
+						</div>
+						<div class="last">
+							<p class="year  year--adjust">2022 йил</p>
+							<p class="amount amount--new last">390 630млн сум</p>
+						</div>
+					</div>
+				</div>
 
-          <p class="item">
-            <a @click='showNav = false' href="#l3">
-            Автомобиль йўллари соҳасига Ўзбекистон Республикасининг Тикланиш ва тараққиёт жамғармаси ажратмалари
-            </a>
-          </p>
-          
-          <p class="item">
-            <a @click='showNav = false' href="#l4">
-            Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли маблағлар
-            </a>
-          </p>
+				<div class="comparisionContent">
+					<div class="information">Юк ташиш воситаларига берилган рухсатномалар сони</div>
+					<div class="compareThem">
+						<div class="last">
+							<p class="year year--adjust">Муваффақиятли</p>
+							<p class="amount amount--last last2">2576</p>
+						</div>
+						<div class="last">
+							<p class="year year--adjust">Келишув жараёнида</p>
+							<p class="amount amount--new new2">70</p>
+						</div>
 
-          <p class="item">
-            <a @click='showNav = false' href="#l5">
-            Respublika va hududiy jamgarmalarga respublika byudjetidan har yili ajratiladigan maqsadli mablaglar
-            </a>
-          </p>
+						<div class="last">
+							<p class="year year--adjust">Тўлдириш жараёнида</p>
+							<p class="amount amount--last last3">354</p>
+						</div>
+					</div>
+				</div>
 
-          <p class="item">
-            <a @click='showNav = false' href="#l6">
-           Umumiyfoydalanishdagi avtomobil yo’llarining ajratilgan mintaqalarida joylashgan yer uchastkalarida va inshootlarida tashqi reklama obyektlari (konstruksiyalari) qurish uhun elektron auksionlar yakunlari bo’yicha huquq taqdim etishda tushadigan mablag’lar, shuningdek, tashqi reklamalarning o’rnatilgan obyektlari (konstruksiyalari) uchun oylik to’lovlar
-            </a>
-          </p>
+				<div class="comparisionContent">
+					<div class="information">Тупрок йуллар ва шагал йуллар хакида маълумот (км)</div>
+					<div class="compareThem">
+						<div class="last">
+							<span>2021 йил</span>
+							<p class="year year--adjust">Шагал йуллар</p>
+							<p class="amount amount--last last2">47567,1км</p>
+						</div>
+						<div class="last">
+							<p class="year year--adjust">Тупрок йуллар</p>
+							<p class="amount amount--new last3">39422,4км</p>
+						</div>
 
-            <p class="item">
-            <a @click='showNav = false' href="#l7">
-          Умумий фойдаланишдаги автомобиль йўлларининг ажратилган минтақаларида жойлашган ер участкаларида ва иншоотларида ташқи реклама объектлари (конструкциялари) қуриш учун электрон аукционлар якунлари бўйича ҳуқуқ тақдим этишдан тушадиган маблағлар, шунингдек, ташқи рекламанинг ўрнатилган объектлари (конструкциялари) учун ойлик тўловлар
-            </a>
-          </p>
+						<div class="last m36">
+							<span>2021 йил</span>
+							<p class="year year--adjust">Шагал йуллар</p>
+							<p class="amount amount--last last2">47567,1км</p>
+						</div>
+						<div class="last">
+							<p class="year year--adjust">Тупрок йуллар</p>
+							<p class="amount amount--new last3">39422,4км</p>
+						</div>
+					</div>
+				</div>
 
-           <p class="item">
-            <a @click='showNav = false' href="#l8">
-         Умумий фойдаланишдаги автомобиль йўлларининг йўл бўйи минтақасида жойлашган ер участкаларида ишлаб чиқариш, хизматлар кўрсатиш, савдо, сервис объектлари, шунингдек, тадбиркорлик фаолиятининг бошқа объектларини жойлаштириш ва қуриш учун мазкур ер участкаларидан фойдаланиш ҳуқуқини реализация қилишдан тушадиган маблағлар
-            </a>
-          </p>
+				<div class="comparisionContent">
+					<div class="information">Техникалар сони</div>
+					<div class="compareThem">
+						<div class="last">
+							<p class="year year--adjust">Умумий</p>
+							<p class="amount amount--last last2">6062</p>
+						</div>
+						<div class="last">
+							<p class="year year--adjust">Автотранспорт</p>
+							<p class="amount amount--new new2">3138</p>
+						</div>
 
-           <p class="item">
-            <a @click='showNav = false' href="#l9">
-Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда амалга оширилаётган ишлар тўғрисида батафсил маълумот (йўлларни лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)            </a>
-          </p>
+						<div class="last">
+							<p class="year year--adjust">Машина механизм</p>
+							<p class="amount amount--last last3">2924</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-            <p class="item">
-            <a @click='showNav = false' href="#l10">
-Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари учун ажратилган маблағлар тўғрисида маълумот            </a>
-          </p>
+		<div class="contactUs" id="contactUs">
+			<div class="container">
+				<p class="heading1">Биз билан боғланиш</p>
+				<p class="title">Республика ва ҳудудий жамгармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблаглар</p>
+				<div class="contactForm">
+					<div class="contactForm__inputs">
+						<div class="name" :class="{ border: focusName }">
+							<div class="name__icon">
+								<span v-html="username"></span>
+							</div>
+							<div class="username">
+								<input
+									@click="focusName = true"
+									@blur="focusName = false"
+									type="text"
+									placeholder="Исм"
+									id="username"
+									class="username__input"
+								/>
+								<label for="username" class="username__label">Исм</label>
+							</div>
+						</div>
 
-          </div>
+						<div class="name" :class="{ border: focusPhone }">
+							<div class="name__icon">
+								<span v-html="phone"></span>
+							</div>
+							<div class="username">
+								<input
+									@click="focusPhone = true"
+									@blur="focusPhone = false"
+									type="text"
+									placeholder="Телефон"
+									id="phone"
+									class="username__input"
+								/>
+								<label for="phone" class="username__label">Телефон</label>
+							</div>
+						</div>
 
+						<div class="name" :class="{ border: focusMail }">
+							<div class="name__icon">
+								<span v-html="mail"></span>
+							</div>
+							<div class="username">
+								<input @click="focusMail = true" @blur="focusMail = false" type="mail" placeholder="E-mail" id="mail" class="username__input" />
+								<label for="mail" class="username__label">E-mail</label>
+							</div>
+						</div>
 
-          <div class="leftSide">
-          <p class="item">
-            <a @click='showNav = false' href="#l11">
-            Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари тўғрисида маълумот
-            </a>
-          </p>
+						<div class="name name--comment" :class="{ border: focusComment }">
+							<div class="name__icon">
+								<span v-html="write"></span>
+							</div>
+							<div class="username">
+								<textarea @click="focusComment = true" @blur="focusComment = false" placeholder="Хабар" id="mail" class="username__input" />
+							</div>
+						</div>
 
-          <p class="item">
-            <a @click='showNav = false' href="#l12">
-            (Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция дастурлари ижроси бўйича маълумотлар
-            </a>
-          </p>
+						<div class="submitBtn">
+							<p>Юбориш</p>
+							<span v-html="arrow"></span>
+						</div>
+					</div>
+					<div class="contactForm__image">
+						<span v-html="contact"></span>
+					</div>
+				</div>
+			</div>
+		</div>
 
-          <p class="item">
-            <a @click='showNav = false' href="#l13">
-            Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш, уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатномалар тўғрисида маълумотлар
-            </a>
-          </p>
+		<div class="footer">
+			<div class="container">
+				<div class="footer__logoBox">
+					<img src="../assets/images/whiteLogo.png" alt="logo" />
+					<a href="shaffofyul.uz">Shaffofyul.uz</a>
+				</div>
 
-           <p class="item">
-            <a @click='showNav = false' href="#l14">
-            Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш, уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатнома талабларини бажармаслик, шунингдек йўлларни сақлаш қоидаларини бузиш ҳолатлари бўйича маълумотлар
-            </a>
-          </p>
-
-          <p class="item">
-            <a @click='showNav = false' href="#l15">
-           Утказилган тендерлар сони ва тежалган маблаг суммаси
-            </a>
-          </p>
-
-          <p class="item">
-            <a @click='showNav = false' href="#l16">
-           1км йул куриш уртача бозор нархи
-            </a>
-          </p>
-
-          <p class="item">
-            <a @click='showNav = false' href="#l17">
-           Йил давомида таъмирланган ва курилган йуллар хакида маълумот (км)
-            </a>
-          </p>
-
-          <p class="item">
-            <a @click='showNav = false' href="#l18">
-          Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган таъмирталаб йуллар
-            </a>
-          </p>
-            
-            <p class="item">
-            <a @click='showNav = false' href="#l19">
-Ички йуллар хакида маълумот (3 йиллик йул харитаси)
-
-            </a>
-          </p>
-
-          <p class="item">
-            <a @click='showNav = false' href="#l20">
-Асфальт ишлаб чикарувчи корхоналар
-            </a>
-          </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="statistics" id="statistics">
-      <img src="../assets/images/dot.png" class="dot big1" alt="Dot" />
-      <img src="../assets/images/dotL.png" class="dot little1" alt="Dot" />
-      <img src="../assets/images/dot.png" class="dot big2" alt="Dot" />
-      <img src="../assets/images/dotL.png" class="dot little2" alt="Dot" />
-
-      <span v-html="dot"></span>
-      <div class="container">
-        <div class="statistics__heading">
-          <p class="heading1">
-            Aвтомобил йўллари соҳасидаги очиқ статистикалар рўйхати
-          </p>
-        </div>
-        <div class="statistic">
-          <p class="thumbali lightGrey">1</p>
-          <p class="info" id="l1">
-            Республика ва ҳудудий жамғармаларга республика бюджетидан ҳар йили
-            ажратиладиган мақсадли маблағлар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali dolphin">2</p>
-          <p class="info" id="l2">
-            Автомобиль йўллари соҳасига ажратиладиган ҳалкаро молия институтлар
-            маблағлари
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali pink">3</p>
-          <p class="info" id="l3">
-            Автомобиль йўллари соҳасига Ўзбекистон Республикасининг Тикланиш ва
-            тараққиёт жамғармаси ажратмалари
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali purple">4</p>
-          <p class="info" id="l4">
-            Автомобиль йўллари ва кўчалар бўйлаб автомобиль сақлаш жойларидан
-            фойдаланганлик учун тўловлардан келиб тушадиган маблағлар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali grass">5</p>
-          <p class="info" id="l5">
-            Транспорт воситаларини техник кўрикдан ўтказиш учун йиғимнинг
-            базавий ставкасига қўшимча коэффициентларни қўллашдан тушадиган
-            маблағлар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali lightGrey">6</p>
-          <p class="info" id="l6">
-            Ҳудудий жамғармаларга Республика жамғармасидан трансфертлар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali purple">7</p>
-          <p class="info" id="l7">
-            Умумий фойдаланишдаги автомобиль йўлларининг ажратилган
-            минтақаларида жойлашган ер участкаларида ва иншоотларида ташқи
-            реклама объектлари (конструкциялари) қуриш учун электрон аукционлар
-            якунлари бўйича ҳуқуқ тақдим этишдан тушадиган маблағлар, шунингдек,
-            ташқи рекламанинг ўрнатилган объектлари (конструкциялари) учун ойлик
-            тўловлар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali grass">8</p>
-          <p class="info" id="l8">
-            Умумий фойдаланишдаги автомобиль йўлларининг йўл бўйи минтақасида
-            жойлашган ер участкаларида ишлаб чиқариш, хизматлар кўрсатиш, савдо,
-            сервис объектлари, шунингдек, тадбиркорлик фаолиятининг бошқа
-            объектларини жойлаштириш ва қуриш учун мазкур ер участкаларидан
-            фойдаланиш ҳуқуқини реализация қилишдан тушадиган маблағлар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali pink">9</p>
-          <p class="info" id="l9">
-            Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда
-            амалга оширилаётган ишлар тўғрисида батафсил маълумот (йўлларни
-            лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali purple">10</p>
-          <p class="info" id="l10">
-            Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар
-            ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари учун
-            ажратилган маблағлар тўғрисида маълумот
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali lightGrey">11</p>
-          <p class="info" id="l11">
-            Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар
-            ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
-            тўғрисида маълумот
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali dolphin">12</p>
-          <p class="info" id="l12">
-            (Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини
-            ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция дастурлари
-            ижроси бўйича маълумотлар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali pink">13</p>
-          <p class="info" id="l13">
-            Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар,
-            бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш, уларда
-            сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни
-            амалга ошириш учун берилган рухсатномалар тўғрисида маълумотлар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali lightGrey">14</p>
-          <p class="info" id="l14">
-            Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар,
-            бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш, уларда
-            сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни
-            амалга ошириш учун берилган рухсатнома талабларини бажармаслик,
-            шунингдек йўлларни сақлаш қоидаларини бузиш ҳолатлари бўйича
-            маълумотлар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali grass">15</p>
-          <p class="info" id="l15">
-            Утказилган тендерлар сони ва тежалган маблаг суммаси
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali purple">16</p>
-          <p class="info" id="l16">1км йул куриш уртача бозор нархи</p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali pink">17</p>
-          <p class="info" id="l17">
-            Йил давомида таъмирланган ва курилган йуллар хакида маълумот (км)
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali grass">18</p>
-          <p class="info" id="l18">
-            Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган
-            таъмирталаб йуллар
-          </p>
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali lightGrey">19</p>
-          <p class="info" id="l19">
-            Ички йуллар хакида маълумот (3 йиллик йул харитаси)
-          </p>
-
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-
-        <div class="statistic">
-          <p class="thumbali pink">20</p>
-          <p class="info" id="l20">Асфальт ишлаб чикарувчи корхоналар</p>
-
-          <div class="moneyAmount">
-            <p class="money">2.4B</p>
-            <span class="currency">uzs</span>
-            <span class="period">2006-2021 years</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="comparision">
-      <div class="container">
-        <p class="heading1">Қиёслаш</p>
-        <div class="comparisionContent">
-          <div class="information">
-            Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш
-            ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли
-            маблағлар
-          </div>
-          <div class="compareThem">
-            <div class="last">
-              <p class="year">2021 yil</p>
-              <p class="amount amount--last last1">1109,8mlrd so’m</p>
-            </div>
-            <div class="last">
-              <p class="year">2022 yil</p>
-              <p class="amount amount--new new1">1220,7mlrd so’m</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="comparisionContent">
-          <div class="information">
-            Ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчалари
-            учун махаллий вакиллик ҳокимияти органлари томонидан ажратилган
-            маблаг (жорий этиладиган йиғимлардан тушумлар)
-          </div>
-          <div class="compareThem">
-            <div class="last">
-              <p class="year">2021 yil</p>
-              <p class="amount amount--last last1">3045,1км</p>
-            </div>
-            <div class="last">
-              <p class="year">2022 yil</p>
-              <p class="amount amount--new new1">3349,6км</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="comparisionContent">
-          <div class="information">
-            Автомобиль йўлларини қуриш, қайта қуриш, реконструкция қилиш ва
-            таъмирлаш объектларида олиб борилаётган йўл қурилиш ишлари ҳақида
-            маълумотлар
-          </div>
-          <div class="compareThem">
-            <div class="last">
-              <p class="year">2021 yil</p>
-              <p class="amount amount--last new1">586 687млн сум</p>
-            </div>
-            <div class="last">
-              <p class="year">2022 yil</p>
-              <p class="amount amount--new last1">390 630млн сум</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="comparisionContent">
-          <div class="information">
-            Юк ташиш воситаларига берилган рухсатномалар сони
-          </div>
-          <div class="compareThem">
-            <div class="last">
-              <p class="year year--adjust">Muvaffaqiyatli</p>
-              <p class="amount amount--last last2">2576</p>
-            </div>
-            <div class="last">
-              <p class="year year--adjust">Kelishuv jarayonida</p>
-              <p class="amount amount--new new2">70</p>
-            </div>
-
-            <div class="last">
-              <p class="year year--adjust">To’ldirish jarayonida</p>
-              <p class="amount amount--last last3">354</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="comparisionContent">
-          <div class="information">
-            Тупрок йуллар ва шагал йуллар хакида маълумот (км)
-          </div>
-          <div class="compareThem">
-            <div class="last">
-              <span>2021 yil</span>
-              <p class="year year--adjust">Шагал йуллар</p>
-              <p class="amount amount--last last2">47567,1км</p>
-            </div>
-            <div class="last">
-              <p class="year year--adjust">Тупрок йуллар</p>
-              <p class="amount amount--new last3">39422,4км</p>
-            </div>
-
-            <div class="last m36">
-              <span>2021 yil</span>
-              <p class="year year--adjust">Шагал йуллар</p>
-              <p class="amount amount--last last2">47567,1км</p>
-            </div>
-            <div class="last">
-              <p class="year year--adjust">Тупрок йуллар</p>
-              <p class="amount amount--new last3">39422,4км</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="comparisionContent">
-          <div class="information">Техникалар сони</div>
-          <div class="compareThem">
-            <div class="last">
-              <p class="year year--adjust">Умумий</p>
-              <p class="amount amount--last last2">6062</p>
-            </div>
-            <div class="last">
-              <p class="year year--adjust">Автотранспорт</p>
-              <p class="amount amount--new new2">3138</p>
-            </div>
-
-            <div class="last">
-              <p class="year year--adjust">Машина механизм</p>
-              <p class="amount amount--last last3">2924</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="contactUs" id="contactUs" >
-      <div class="container">
-        <p class="heading1">Биз билан боғланиш</p>
-        <p class="title">
-          Республика ва ҳудудий жамгармаларга республика бюджетидан ҳар йили
-          ажратиладиган мақсадли маблаглар
-        </p>
-        <div class="contactForm">
-          <div class="contactForm__inputs">
-            <div class="name" :class="{ border: focusName }">
-              <div class="name__icon">
-                <span v-html="username"></span>
-              </div>
-              <div class="username">
-                <input
-                  @click="focusName = true"
-                  @blur="focusName = false"
-                  type="text"
-                  placeholder="Исм"
-                  id="username"
-                  class="username__input"
-                />
-                <label for="username" class="username__label">Исм</label>
-              </div>
-            </div>
-
-            <div class="name" :class="{ border: focusPhone }">
-              <div class="name__icon">
-                <span v-html="phone"></span>
-              </div>
-              <div class="username">
-                <input
-                  @click="focusPhone = true"
-                  @blur="focusPhone = false"
-                  type="text"
-                  placeholder="Телефон"
-                  id="phone"
-                  class="username__input"
-                />
-                <label for="phone" class="username__label">Телефон</label>
-              </div>
-            </div>
-
-            <div class="name" :class="{ border: focusMail }">
-              <div class="name__icon">
-                <span v-html="mail"></span>
-              </div>
-              <div class="username">
-                <input
-                  @click="focusMail = true"
-                  @blur="focusMail = false"
-                  type="mail"
-                  placeholder="E-mail"
-                  id="mail"
-                  class="username__input"
-                />
-                <label for="mail" class="username__label">E-mail</label>
-              </div>
-            </div>
-
-            <div class="name name--comment" :class="{ border: focusComment }">
-              <div class="name__icon">
-                <span v-html="write"></span>
-              </div>
-              <div class="username">
-                <textarea
-                  @click="focusComment = true"
-                  @blur="focusComment = false"
-                  placeholder="Хабар"
-                  id="mail"
-                  class="username__input"
-                />
-              </div>
-            </div>
-
-            <div class="submitBtn">
-              <p>Юбориш</p>
-              <span v-html="arrow"></span>
-            </div>
-          </div>
-          <div class="contactForm__image">
-            <span v-html="contact"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <div class="footer__logoBox">
-          <img src="../assets/images/whiteLogo.png" alt="logo" />
-          <a href="shaffofyul.uz">Shaffofyul.uz</a>
-        </div>
-
-        <div @click="moveTop" class="upBtn">
-          <span v-html="upBtn"></span>
-        </div>
-      </div>
-    </div>
-  </div>
+				<div @click="moveTop" class="upBtn">
+					<span v-html="upBtn"></span>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
 // @ is an alias to /src
 export default {
-  name: "Home",
-  data() {
-    return {
-      showNav: false,
-      focusName: false,
-      focusPhone: false,
-      focusMail: false,
-      focusComment: false,
-      close: `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+	name: "Home",
+	data() {
+		return {
+			showNav: false,
+			focusName: false,
+			focusPhone: false,
+			focusMail: false,
+			focusComment: false,
+			close: `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M30.8844 14.6302C31.2749 14.2397 31.2749 13.6065 30.8844 13.216C30.4939 12.8255 29.8607 12.8255 29.4702 13.216L30.8844 14.6302ZM13.1155 29.5707C12.725 29.9612 12.725 30.5944 13.1155 30.9849C13.506 31.3754 14.1392 31.3754 14.5297 30.9849L13.1155 29.5707ZM29.4702 30.9849C29.8607 31.3754 30.4939 31.3754 30.8844 30.9849C31.275 30.5944 31.275 29.9612 30.8844 29.5707L29.4702 30.9849ZM14.5297 13.216C14.1392 12.8254 13.506 12.8254 13.1155 13.216C12.725 13.6065 12.725 14.2397 13.1155 14.6302L14.5297 13.216ZM29.4702 13.216L13.1155 29.5707L14.5297 30.9849L30.8844 14.6302L29.4702 13.216ZM30.8844 29.5707L14.5297 13.216L13.1155 14.6302L29.4702 30.9849L30.8844 29.5707ZM42 22C42 33.0457 33.0457 42 22 42V44C34.1503 44 44 34.1503 44 22H42ZM22 42C10.9543 42 2 33.0457 2 22H0C0 34.1503 9.84974 44 22 44V42ZM2 22C2 10.9543 10.9543 2 22 2V0C9.84974 0 0 9.84974 0 22H2ZM22 2C33.0457 2 42 10.9543 42 22H44C44 9.84974 34.1503 0 22 0V2Z" fill="black"/>
 </svg>
 `,
-      constructors: `<svg width="1235" height="879" viewBox="0 0 1235 879" fill="none" xmlns="http://www.w3.org/2000/svg">
+			constructors: `<svg width="1235" height="879" viewBox="0 0 1235 879" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M233 459.5L317 411L394.5 456L310.5 504.5L233 459.5Z" fill="url(#paint0_linear_1_890)"/>
 <path d="M322 468.5L406 420L483.5 465L399.5 513.5L322 468.5Z" fill="url(#paint1_linear_1_890)"/>
 <path d="M626 216.5L710 168L787.5 213L703.5 261.5L626 216.5Z" fill="url(#paint2_linear_1_890)"/>
@@ -1646,13 +1616,13 @@ export default {
 </svg>
 
 `,
-      navigationIcon: `<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+			navigationIcon: `<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.90002 6.49995C3.90002 5.78198 4.48205 5.19995 5.20002 5.19995H20.8C21.518 5.19995 22.1 5.78198 22.1 6.49995C22.1 7.21792 21.518 7.79995 20.8 7.79995H5.20002C4.48205 7.79995 3.90002 7.21792 3.90002 6.49995Z" fill="white"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.90002 13C3.90002 12.282 4.48205 11.7 5.20002 11.7H20.8C21.518 11.7 22.1 12.282 22.1 13C22.1 13.7179 21.518 14.3 20.8 14.3H5.20002C4.48205 14.3 3.90002 13.7179 3.90002 13Z" fill="white"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.90002 19.5C3.90002 18.782 4.48205 18.2 5.20002 18.2H13C13.718 18.2 14.3 18.782 14.3 19.5C14.3 20.2179 13.718 20.8 13 20.8H5.20002C4.48205 20.8 3.90002 20.2179 3.90002 19.5Z" fill="white"/>
 </svg>
 `,
-      contact: `<svg width="483" height="468" viewBox="0 0 483 468" fill="none" xmlns="http://www.w3.org/2000/svg">
+			contact: `<svg width="483" height="468" viewBox="0 0 483 468" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M150.356 435.472C137.938 435.472 126.045 432.435 116.873 426.918L16.7626 366.671C5.98695 360.184 -0.121605 350.754 0.00181173 340.799C0.124031 330.943 6.34643 321.748 17.0753 315.571L275.908 166.79C284.629 161.769 295.91 159 307.661 159C320.086 159 331.982 162.041 341.159 167.565L441.261 227.807C452.045 234.298 458.156 243.732 458.029 253.691C457.904 263.546 451.68 272.737 440.953 278.905L182.127 427.681C173.394 432.703 162.11 435.472 150.356 435.472Z" fill="white"/>
 <path d="M276.082 167.124C284.77 162.12 296.023 159.373 307.727 159.388C315.946 159.4 323.931 160.749 331.035 163.276C332.453 163.776 333.895 164.357 335.237 164.952C337.254 165.842 339.267 166.889 341.086 167.983L440.837 228.015C445.733 230.963 449.828 234.637 452.609 238.586C455.908 243.214 457.657 248.365 457.618 253.668C457.554 263.456 451.398 272.606 440.715 278.751L181.952 427.49C173.241 432.501 161.971 435.246 150.252 435.223C143.434 435.207 136.777 434.273 130.656 432.507C125.725 431.106 120.927 429.035 116.879 426.602L17.0046 366.495C6.31644 360.063 0.265419 350.721 0.38644 340.863C0.506262 331.103 6.66993 321.993 17.3114 315.868L276.082 167.124Z" fill="#FEFEFE"/>
 <path d="M276.256 167.458C284.915 162.471 296.136 159.745 307.794 159.777C315.983 159.798 323.942 161.156 331.008 163.695C332.399 164.186 333.874 164.794 335.191 165.375C337.169 166.248 339.232 167.329 341.015 168.401L440.415 228.224C445.217 231.114 449.417 234.829 452.144 238.701C455.454 243.283 457.22 248.388 457.209 253.646C457.208 263.367 451.119 272.476 440.478 278.596L181.778 427.298C173.089 432.298 161.832 435.018 150.149 434.975C143.347 434.948 136.706 433.995 130.613 432.207C125.777 430.834 120.855 428.675 116.885 426.287L17.2479 366.324C6.64597 359.942 0.652456 350.687 0.772278 340.931C0.889704 331.268 6.99347 322.24 17.5486 316.166L276.256 167.458Z" fill="#FDFDFD"/>
@@ -3210,49 +3180,47 @@ export default {
 </defs>
 </svg>
 `,
-      username: `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+			username: `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M15 3.4375C12.7563 3.4375 10.9375 5.25634 10.9375 7.5C10.9375 9.74366 12.7563 11.5625 15 11.5625C17.2437 11.5625 19.0625 9.74366 19.0625 7.5C19.0625 5.25634 17.2437 3.4375 15 3.4375ZM9.0625 7.5C9.0625 4.22081 11.7208 1.5625 15 1.5625C18.2792 1.5625 20.9375 4.22081 20.9375 7.5C20.9375 10.7792 18.2792 13.4375 15 13.4375C11.7208 13.4375 9.0625 10.7792 9.0625 7.5Z" fill="#2B49E3"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.8125 27.5C2.8125 20.769 8.26905 15.3125 15 15.3125C21.731 15.3125 27.1875 20.769 27.1875 27.5C27.1875 28.0178 26.7678 28.4375 26.25 28.4375C25.7322 28.4375 25.3125 28.0178 25.3125 27.5C25.3125 21.8046 20.6954 17.1875 15 17.1875C9.30458 17.1875 4.6875 21.8046 4.6875 27.5C4.6875 28.0178 4.26777 28.4375 3.75 28.4375C3.23223 28.4375 2.8125 28.0178 2.8125 27.5Z" fill="#2B49E3"/>
 </svg>
 `,
-      phone: `<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+			phone: `<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.60628 2.93018C2.78994 2.93018 2.33265 3.64439 2.54791 4.28236C3.57796 7.33506 5.48343 11.8782 8.29859 14.6933C11.1137 17.5086 15.6569 19.414 18.7096 20.444C19.3475 20.6593 20.0618 20.2021 20.0618 19.3857V16.2794L17.3561 14.7752L14.4706 16.2179C14.23 16.3382 13.9565 16.3759 13.6923 16.3252L13.923 15.1227C13.6923 16.3252 13.6927 16.3253 13.6923 16.3252L13.6889 16.3246L13.6847 16.3238L13.674 16.3216L13.6431 16.3152C13.6185 16.3099 13.5859 16.3027 13.5458 16.2932C13.4658 16.2743 13.3559 16.2464 13.2213 16.2076C12.9526 16.13 12.5823 16.0079 12.1529 15.8249C11.2987 15.4609 10.1798 14.8429 9.16443 13.8275C8.14919 12.8123 7.52957 11.692 7.16398 10.8368C6.98013 10.4068 6.85716 10.036 6.77893 9.7669C6.73974 9.6321 6.71155 9.52206 6.69243 9.44197C6.68286 9.4019 6.67554 9.36924 6.67024 9.34465L6.66375 9.31386L6.66158 9.30313L6.66075 9.29896L6.6604 9.29717C6.66032 9.29679 6.66009 9.29559 7.86205 9.0618L6.66009 9.29559C6.60852 9.03048 6.64605 8.75576 6.76683 8.5142L8.20977 5.62826L6.71204 2.93024L3.60628 2.93018ZM9.16434 9.19526C9.22029 9.37455 9.30186 9.60759 9.4158 9.87412C9.6968 10.5314 10.1613 11.361 10.8961 12.0958C11.6308 12.8305 12.4583 13.293 13.1129 13.572C13.3781 13.685 13.6099 13.7657 13.7882 13.821L16.2607 12.5848C16.2608 12.5848 16.2607 12.5848 16.2607 12.5848C16.9841 12.2231 17.8393 12.2418 18.546 12.6347L21.2518 14.139C22.0288 14.5711 22.5107 15.3903 22.5107 16.2794V19.3857C22.5107 21.7329 20.2863 23.5608 17.9266 22.7645C14.8227 21.7171 9.80904 19.6672 6.56689 16.425C3.32475 13.1829 1.2748 8.16923 0.227459 5.06532C-0.568735 2.70562 1.25897 0.481201 3.60628 0.481201H6.71201C7.60168 0.481201 8.4213 0.963704 8.85313 1.74146L10.351 4.43957C10.7431 5.14602 10.7617 6.00058 10.4002 6.72346C10.4002 6.72348 10.4002 6.72343 10.4002 6.72346L9.16434 9.19526Z" fill="#2B49E3"/>
 </svg>
 `,
-      mail: `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+			mail: `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5625 5.625C1.5625 5.10723 1.98223 4.6875 2.5 4.6875H27.5C28.0178 4.6875 28.4375 5.10723 28.4375 5.625V24.375C28.4375 24.8928 28.0178 25.3125 27.5 25.3125H2.5C1.98223 25.3125 1.5625 24.8928 1.5625 24.375V5.625ZM3.4375 6.5625V23.4375H26.5625V6.5625H3.4375Z" fill="#2B49E3"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.74999 5.06256C2.06065 4.64834 2.64828 4.5644 3.06249 4.87506L15 13.8282L26.9375 4.87506C27.3517 4.5644 27.9393 4.64834 28.25 5.06256C28.5607 5.47677 28.4767 6.06439 28.0625 6.37506L15.5625 15.7501C15.2292 16.0001 14.7708 16.0001 14.4375 15.7501L1.93749 6.37506C1.52328 6.06439 1.43933 5.47677 1.74999 5.06256Z" fill="#2B49E3"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5625 5.625C1.5625 5.10723 1.98223 4.6875 2.5 4.6875H15C15.5178 4.6875 15.9375 5.10723 15.9375 5.625C15.9375 6.14277 15.5178 6.5625 15 6.5625H3.4375V15C3.4375 15.5178 3.01777 15.9375 2.5 15.9375C1.98223 15.9375 1.5625 15.5178 1.5625 15V5.625Z" fill="#2B49E3"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0625 5.625C14.0625 5.10723 14.4822 4.6875 15 4.6875H27.5C28.0178 4.6875 28.4375 5.10723 28.4375 5.625V15C28.4375 15.5178 28.0178 15.9375 27.5 15.9375C26.9822 15.9375 26.5625 15.5178 26.5625 15V6.5625H15C14.4822 6.5625 14.0625 6.14277 14.0625 5.625Z" fill="#2B49E3"/>
 </svg>
 `,
-      write: `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+			write: `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1105 1.77581C22.4766 1.40969 23.0702 1.40969 23.4363 1.77581L28.7396 7.07909C28.9154 7.25491 29.0142 7.49337 29.0142 7.74201C29.0142 7.99065 28.9154 8.2291 28.7396 8.40492L9.29416 27.8504C9.11834 28.0262 8.87987 28.125 8.63123 28.1249L3.32808 28.1248C2.81034 28.1248 2.39062 27.7051 2.3906 27.1874L2.39044 21.8842C2.39043 21.6355 2.48921 21.397 2.66503 21.2212L22.1105 1.77581ZM22.7734 3.76454L4.26545 22.2724L4.26558 26.2498L8.24293 26.2499L26.7509 7.74201L22.7734 3.76454Z" fill="#2B49E3"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8072 7.07903C17.1733 6.71291 17.7669 6.71291 18.133 7.07903L23.4363 12.3823C23.8024 12.7485 23.8024 13.3421 23.4363 13.7082C23.0702 14.0743 22.4766 14.0743 22.1105 13.7082L16.8072 8.40486C16.4411 8.03874 16.4411 7.44515 16.8072 7.07903Z" fill="#2B49E3"/>
 </svg>
 `,
-      arrow: `<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+			arrow: `<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.751478 11.6485C0.282849 11.1799 0.282849 10.4201 0.751478 9.95147L4.70295 6L0.75148 2.04853C0.28285 1.5799 0.282851 0.820101 0.75148 0.351472C1.22011 -0.117158 1.97991 -0.117158 2.44854 0.351472L7.24853 5.15147C7.71716 5.6201 7.71716 6.3799 7.24853 6.84853L2.44853 11.6485C1.97991 12.1172 1.22011 12.1172 0.751478 11.6485Z" fill="white"/>
 </svg>
 `,
-      upBtn: `<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+			upBtn: `<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6485 7.24843C11.1799 7.71706 10.4201 7.71706 9.95147 7.24843L6 3.29696L2.04853 7.24843C1.5799 7.71706 0.820101 7.71706 0.351472 7.24843C-0.117157 6.7798 -0.117157 6.02 0.351472 5.55137L5.15147 0.751374C5.6201 0.282745 6.3799 0.282745 6.84853 0.751374L11.6485 5.55137C12.1172 6.02 12.1172 6.7798 11.6485 7.24843Z" fill="#3240DF"/>
 </svg>
-`,
-    };
-  },
+`
+		};
+	},
 
-  methods: {
-    moveTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    },
+	methods: {
+		moveTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth"
+			});
+		}
+	},
 
-  },
-
-  components: {},
+	components: {}
 };
-
 </script>

@@ -8,15 +8,27 @@ $gilroy: "Gilroy";
 }
 
 
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%; //1rem =10px // 8
 }
 
 html{
+    font-size: 62.5%; //1rem =10px
     scroll-behavior: smooth !important;
+    
+    @media (max-width: 56.25em){
+        font-size: 50%;
+    }
+    @media (max-width: 37.5em){
+        font-size: 47%;
+    }
 }
 
 .container{

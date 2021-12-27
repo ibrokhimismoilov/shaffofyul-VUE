@@ -1,0 +1,36 @@
+// Meadi Query manager
+/*
+
+0-600px; Phone 
+600-900px; Tablat Portrait
+900-1200px; Tablet Landscape
+[1200-1800px] is our normal code
+1800px+ ; Big Desktop; 
+$breakpoint argument choices 
+
+-phone
+-tab-port
+-tab-land
+big-desktop
+ORDER: header/navigation/statistics/comparision/contact/  */
+
+// @mixin respond($breakpoint){   
+
+//     @if $breakpoint == big-desktop {
+//       @media (min-width: 112.5em){@content}
+//     }
+
+//     @if $breakpoint == tab-land {
+//       @media (max-width: 85em){@content}
+//     }
+
+    
+//     @if $breakpoint == tab-port {   
+
+//       @media (max-width: 56.25em){@content} 
+//     }
+    
+//     @if $breakpoint == phone {    
+//       @media (max-width: 37.5em){@content}                         
+//     }
+//   }

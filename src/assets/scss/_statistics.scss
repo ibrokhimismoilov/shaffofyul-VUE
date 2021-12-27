@@ -2,31 +2,52 @@
 .statistics {
   height: 100%;
   background-color: #f8fafe;
-  padding-top: 6rem;
+  padding: 6rem 2rem;
+  // margin-bottom: ;
   position: relative;
   
   .dot{
     position: absolute;
+    @media (max-width: 85em){
+      display: none;
+     }
   }
 
   .big1{
     top: 25rem;
     right: 1rem;
+
+    @media (max-width: 85em){
+      top: -2rem;
+    }
   }
   
   .big2{
     top: 295rem;
     left: 0;
-  }
+    @media (max-width: 85em){
+      top: 3rem;
+      left: 12rem;
+    }
 
+  }
+  
   .little1{
+    @media (max-width: 85em){
+      top: 13rem;
+      left: 4rem;
+    }
     top: 95rem;
     left: 14rem;
   }
-
+  
   .little2{
     top: 185rem;
     right: 17rem;
+    @media (max-width: 85em){
+      top: 0;
+      right: 7rem
+    }
   }
 
 
@@ -35,32 +56,33 @@
   
   &__heading {
     margin-bottom: 8rem;
+    
     .listHeading {
       font-family: Roboto;
       font-style: normal;
       font-weight: 900;
       font-size: 3.2rem;
-      line-height: 40px;
+      line-height: 4rem;
       color: #333333;
       width: 61.3rem;
     }
    
-    .listSub {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 2.1rem;
-      line-height: 25px;
-      color: #2f2f2f;
-    }
+    // .listSub {
+    //   font-family: Roboto;
+    //   font-style: normal;
+    //   font-weight: normal;
+    //   font-size: 2.1rem;
+    //   line-height: 25px;
+    //   color: #2f2f2f;
+    // }
   }
   .container {
     position: relative;
     z-index: 2;
   }
   .statistic {
-    box-shadow: 0px 2px 29px rgba(117, 128, 151, 0.06);
-    border-radius: 10px;
+    box-shadow: 0px 2px 2.9rem rgba(117, 128, 151, 0.06);
+    border-radius: 1rem;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -70,11 +92,15 @@
     margin-bottom: 1.6rem;
     z-index: 1 !important;
 
+    @media (max-width: 37.5em){
+      flex-direction: column;
+    }
+
 
     &:hover {
       transform: scale(1.04);
-      box-shadow: 0px 20px 40px rgba(117, 128, 151, 0.15);
-      border-radius: 10px;
+      box-shadow: 0px 2rem 4rem rgba(117, 128, 151, 0.15);
+      border-radius: 1rem;
     }
     &:hover .thumbali {
       background-color: #3be300;
@@ -94,8 +120,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 43px;
-      height: 43px;
+      padding:.6rem 1.2rem;
+      width: 4.3rem;
+      height: 4.3rem;
       font-family: Roboto;
       font-style: normal;
       font-weight: bold;
@@ -104,18 +131,39 @@
       border-radius: 50%;
       color: #fff;
       transition: all 0.3s ease;
+      margin-right: 3rem;
+      @media (max-width: 37.5em){
+      //  margin-bottom: 2rem;
+      }
     }
 
     .info {
       font-family: Roboto;
+      display: flex; 
+      align-items: center;
       font-style: normal;
       font-weight: normal;
       font-size: 2.1rem;
       line-height: 150%;
       color: #000000;
-      padding: 0 3rem;
+      padding: 0 2rem;
       width: 78rem;
+
+      span:last-child {
+        max-width: calc(100% - (4.3rem + 2.256rem));
+        width: 100%;
+      }
+
+      @media (max-width: 85em){
+       width: 100%;
+      }
       border-right: 1px solid rgba(0, 0, 0, 0.16);
+      @media (max-width: 37.5em){
+        border-right: none;
+        padding-bottom:1.4rem ;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+        margin-bottom: 1rem;
+      }
     }
 
     .moneyAmount {
@@ -124,8 +172,19 @@
       margin: 0 auto;
       justify-content: flex-end;
       position: relative;
+      @media (max-width: 85em){
+       padding-left: 2rem;
+      }
+
+      @media (max-width: 37.5em){
+        padding-left: 0;
+       }
+
 
       .period {
+        @media (max-width: 85em){
+          padding-left: 2rem;
+         }
         position: absolute;
         display: none;
         bottom: -0.8rem;
@@ -133,7 +192,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 150%;
         color: #474747;
         // transition: all .3s ease;
@@ -143,7 +202,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 4.8rem;
         line-height: 150%;
         color: #474747;
       }
@@ -179,7 +238,7 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(1rem);
   }
   100% {
     opacity: 1;
@@ -193,18 +252,22 @@
   font-family: $gilroy, Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 3.2rem;
+  line-height: 4rem;
   color: #333333;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 20rem;
+  margin-bottom: 20rem;
+  @media (max-width: 85em){
+    margin-bottom: 6rem;
+    padding-bottom: 3rem;
+   }
 
   &::before {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 40px;
+    width: 4rem; 
     height: 2px;
     background: red;
   }

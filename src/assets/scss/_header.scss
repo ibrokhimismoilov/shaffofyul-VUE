@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 130px !important; //Take a look
+    margin-bottom: 13rem !important; //Take a look
     .logoBox {
       display: flex;
       align-items: center;
@@ -21,6 +21,8 @@
       &__logo {
         border-right: 1px solid #ffffff;
         padding-right: 1.2rem;
+        width: 4.5rem;
+        height: 4.5rem;
       }
 
       &__name {
@@ -28,7 +30,7 @@
         font-family: Roboto, sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 16.0656px;
+        font-size: 1.6rem;
         color: #ffffff;
         text-transform: uppercase;
       }
@@ -40,6 +42,10 @@
       padding: 1.2rem 2.4rem;
       border: 1px solid rgba(255, 255, 255, 0.4);
       border-radius: 5.7rem;
+      @media (max-width: 37.5em){
+        border-radius: .4rem;
+        padding: .5rem 1rem;
+      }
       cursor: pointer;
       transition: all 0.3s ease;
       &:hover {
@@ -54,6 +60,9 @@
         font-size: 2.1rem;
         text-transform: uppercase;
         padding-right: 1.4rem;
+        @media (max-width: 37.5em){
+          display: none;
+        }
       }
     }
   }
@@ -62,24 +71,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 56.25em){
+      flex-wrap: wrap;
+
+    }
     .introduction {
       width: 100%;
       &__heading {
         font-family: $gilroy, Roboto, sans-serif;
         font-style: normal;
         font-weight: 900;
-        font-size: 38px;
-        line-height: 42px;
+        font-size: 3.8rem;
+        line-height: 4.2rem;
         color: #ffffff;
         margin-bottom: 1rem;
+        @media (max-width: 37.5em){
+          font-size: 3rem;
+        }
       }
       
       &__subHeading {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
         color: #ffffff;
         margin-bottom: 4.5rem;
       }
@@ -94,16 +110,15 @@
           font-family: Roboto;
           font-style: normal;
           font-weight: bold;
-          font-size: 16px;
+          font-size: 1.6rem;
           font-weight: bold;
           text-transform: uppercase;
           border: 2px solid #fff;
-          border-radius: 50px;
+          border-radius: 5rem;
           transition: all 0.3s ease-out;
-          &:first-child {
-            margin-right: 2rem;
+          @media (max-width: 37.5em){
+            font-size: 1.2rem;
           }
-
           &:hover {
             background-color: #3be300;
             border-color: #3be300;
@@ -118,6 +133,20 @@
         height: 100%;
         transform: scale(1.95) translateY(70px);
         padding-left: 50px;
+       
+        @media (max-width: 85em){
+          transform: scale(1.4) translate(-10rem, 16rem);
+        }
+        @media (max-width: 56.25em){
+        transform: scale(1.4) translate(10rem, 7rem);
+        }
+
+        @media (max-width: 37.5em){
+          // display: none;
+          width: 35rem;
+          transform: translate(2rem, 15rem) scale(1.5);
+        }
+
       }
     }
   }

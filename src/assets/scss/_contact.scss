@@ -1,5 +1,5 @@
 .contactUs {  
-  height: 90rem;
+ display: none;
 
   .title {
     position: relative;
@@ -106,13 +106,13 @@
         position: absolute;
         right: 0;
         padding: 2rem 5rem;
-        width: 15rem;
+        // width: 100%;
         background-color: #2b3b57;
         text-transform: uppercase;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 2.2rem;
+        font-size: 1.6rem;
         line-height: 150%;
         text-transform: uppercase;
         color: #ffffff;

@@ -9,6 +9,13 @@
   display: none;
   padding-top: 4rem;
   animation: moveInBottom .3s ease;
+  @media (max-width: 85em){
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    }
   
   .container {
     .listHeading {
@@ -24,6 +31,10 @@
         &__logo {
           border-right: 1px solid #2b3b57;
           padding-right: 1.2rem;
+          @media (max-width: 37.5em){
+            width: 5.5rem;
+            height: 5.5rem;
+          }
         }
 
         &__name {
@@ -31,7 +42,7 @@
           font-family: Roboto, sans-serif;
           font-style: normal;
           font-weight: bold;
-          font-size: 16.0656px;
+          font-size: 1.6rem;
           color: #2b3b57;
           text-transform: uppercase;
         }
@@ -40,7 +51,14 @@
       span {
         cursor: pointer;
         padding-right: 5rem;
+        @media (max-width: 37.5em){
+          padding-right: 0;
+        }
         svg {
+          @media (max-width: 37.5em){
+            width: 4.5rem;
+            height: 4.5rem;
+          }
           path {
             fill: #2b3b57;
           }
@@ -52,6 +70,11 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      @media (max-width: 85em){
+        flex-wrap: wrap;
+      }
+
+
 
       .leftSide {
         .item {
