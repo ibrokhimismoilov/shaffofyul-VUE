@@ -449,11 +449,9 @@
 
 				<div class="statistic">
 					<p class="info" id="l20">
-            <span class="thumbali pink">20</span>
-            <span>
-                Асфальт ишлаб чикарувчи корхоналар
-              </span>
-            </p>
+						<span class="thumbali pink">20</span>
+						<span> Асфальт ишлаб чикарувчи корхоналар </span>
+					</p>
 
 					<div class="moneyAmount">
 						<p class="money">2.4B</p>
@@ -464,119 +462,33 @@
 			</div>
 		</div>
 
-		<div class="comparision">
+		<div class="compare">
 			<div class="container">
 				<p class="heading1">Қиёслаш</p>
-				<div class="comparisionContent">
-					<div class="information">
-						Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли
-						маблағлар
-					</div>
-					<div class="compareThem">
-						<div class="last">
-							<p class="year  year--adjust">2021 йил</p>
-							<p class="amount amount--last last">1 109,8mlrd сўм</p>
-						</div>
-						<div class="last">
-							<p class="year  year--adjust">2022 йил</p>
-							<p class="amount amount--new new1">1220,7mlrd сўм</p>
-						</div>
-					</div>
-				</div>
 
-				<div class="comparisionContent">
-					<div class="information">
-						Ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчалари учун махаллий вакиллик ҳокимияти органлари томонидан ажратилган маблаг
-						(жорий этиладиган йиғимлардан тушумлар)
-					</div>
-					<div class="compareThem">
-						<div class="last">
-							<p class="year  year--adjust">2021 йил</p>
-							<p class="amount amount--last last">3045,1км</p>
-						</div>
-						<div class="last">
-							<p class="year  year--adjust">2022 йил</p>
-							<p class="amount amount--new new1">3349,6км</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="comparisionContent">
-					<div class="information">
-						Автомобиль йўлларини қуриш, қайта қуриш, реконструкция қилиш ва таъмирлаш объектларида олиб борилаётган йўл қурилиш ишлари ҳақида
-						маълумотлар
-					</div>
-					<div class="compareThem">
-						<div class="last">
-							<p class="year  year--adjust">2021 йил</p>
-							<p class="amount amount--last new1">586 687млн сум</p>
-						</div>
-						<div class="last">
-							<p class="year  year--adjust">2022 йил</p>
-							<p class="amount amount--new last">390 630млн сум</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="comparisionContent">
-					<div class="information">Юк ташиш воситаларига берилган рухсатномалар сони</div>
-					<div class="compareThem">
-						<div class="last">
-							<p class="year year--adjust">Муваффақиятли</p>
-							<p class="amount amount--last last2">2576</p>
-						</div>
-						<div class="last">
-							<p class="year year--adjust">Келишув жараёнида</p>
-							<p class="amount amount--new new2">70</p>
-						</div>
-
-						<div class="last">
-							<p class="year year--adjust">Тўлдириш жараёнида</p>
-							<p class="amount amount--last last3">354</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="comparisionContent">
-					<div class="information">Тупрок йуллар ва шагал йуллар хакида маълумот (км)</div>
-					<div class="compareThem">
-						<div class="last">
-							<span>2021 йил</span>
-							<p class="year year--adjust">Шагал йуллар</p>
-							<p class="amount amount--last last2">47567,1км</p>
-						</div>
-						<div class="last">
-							<p class="year year--adjust">Тупрок йуллар</p>
-							<p class="amount amount--new last3">39422,4км</p>
-						</div>
-
-						<div class="last m36">
-							<span>2021 йил</span>
-							<p class="year year--adjust">Шагал йуллар</p>
-							<p class="amount amount--last last2">47567,1км</p>
-						</div>
-						<div class="last">
-							<p class="year year--adjust">Тупрок йуллар</p>
-							<p class="amount amount--new last3">39422,4км</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="comparisionContent">
-					<div class="information">Техникалар сони</div>
-					<div class="compareThem">
-						<div class="last">
-							<p class="year year--adjust">Умумий</p>
-							<p class="amount amount--last last2">6062</p>
-						</div>
-						<div class="last">
-							<p class="year year--adjust">Автотранспорт</p>
-							<p class="amount amount--new new2">3138</p>
-						</div>
-
-						<div class="last">
-							<p class="year year--adjust">Машина механизм</p>
-							<p class="amount amount--last last3">2924</p>
+				<div class="compare__wrapper" v-for="card in compareData" :key="card.id">
+					<div class="compare__wrapper-card">
+						<div class="title">{{ card.title }}</div>
+						<div class="right">
+							<div class="right__row" v-for="right in card.right" :key="right.id">
+									<p v-if="right.type === 1" class="right__row-col right__row-left">
+										{{ right.text }}
+									</p>
+									<p v-if="right.type === 1" class="right__row-col right__row-right">
+										<span
+											data-aos="linear-chart"
+											:style="[
+												right.isLight
+													? { 'background-color': '#5BD0D0', maxWidth: right.colorWidth }
+													: { 'background-color': '#2473EA', maxWidth: right.colorWidth }
+											]"
+										/>
+										{{ right.linearText }}
+									</p>
+                  <!-- ; 'max-width': right.colorWidth  -->
+									<p v-if="right.type === 0" class="right__row-col right__row-left"></p>
+									<p v-if="right.type === 0" class="right__row-col right__row-right right__row-title">{{ right.title }}</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -658,7 +570,7 @@
 			<div class="container">
 				<div class="footer__logoBox">
 					<img src="../assets/images/whiteLogo.png" alt="logo" />
-					<a href="shaffofyul.uz">Shaffofyul.uz</a>
+					<a href="shaffofyul.uz">shaffofyul.uz</a>
 				</div>
 
 				<div @click="moveTop" class="upBtn">
@@ -675,6 +587,63 @@ export default {
 	name: "Home",
 	data() {
 		return {
+			compareData: [
+				{
+					id: 1,
+					title: "Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли маблағлар",
+					right: [
+						// { type: 0, linearText: "2021 йил" },
+						{ id: 1, type: 1, text: "2021 йил", linearText: "1109,8 млрд сўм", isLight: true, colorWidth: "80%" },
+						{ id: 2, type: 1, text: "2022 йил", linearText: "1220,7 млрд сўм", isLight: false, colorWidth: "100%" }
+					]
+				},
+				{
+					id: 2,
+					title: "Ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчалари учун махаллий вакиллик ҳокимияти органлари томонидан ажратилган маблаг (жорий этиладиган йиғимлардан тушумлар)",
+					right: [
+						{ id: 1, type: 1, text: "2021 йил", linearText: "3045,1км", isLight: true, colorWidth: "70%" },
+						{ id: 2, type: 1, text: "2022 йил", linearText: "3349,6км", isLight: false, colorWidth: "100%" }
+					]
+				},
+				{
+					id: 3,
+					title: "Автомобиль йўлларини қуриш, қайта қуриш, реконструкция қилиш ва таъмирлаш объектларида олиб борилаётган йўл қурилиш ишлари ҳақида маълумотлар",
+					right: [
+						{ id: 1, type: 1, text: "2021 йил", linearText: "586 687млн сўм", isLight: true, colorWidth: "80%" },
+						{ id: 2, type: 1, text: "2022 йил", linearText: "390 630млн сўм", isLight: false, colorWidth: "60%" }
+					]
+				},
+				{
+					id: 4,
+					title: "Юк ташиш воситаларига берилган рухсатномалар сони ",
+					right: [
+						{ id: 1, type: 1, text: "Муваффақиятли", linearText: "2576", isLight: true, colorWidth: "90%" },
+						{ id: 2, type: 1, text: "Келишув жараёнида", linearText: "70", isLight: false, colorWidth: "30%" },
+						{ id: 3, type: 1, text: "Тўлдириш жараёнида", linearText: "354", isLight: true, colorWidth: "40%" }
+					]
+				},
+				{
+					id: 5,
+					title: "Тупрок йуллар ва шагал йуллар хакида маълумот (км)",
+					right: [
+						{ id: 1, type: 0, title: "2021 йил" },
+						{ id: 2, type: 1, text: "Шагал йуллар", linearText: "47567,1км", isLight: false, colorWidth: "100%" },
+						{ id: 3, type: 1, text: "Тупрок йуллар", linearText: "39422,4км", isLight: true, colorWidth: "85%" },
+						{ id: 4, type: 0, title: "2021 йил" },
+						{ id: 5, type: 1, text: "Шагал йуллар", linearText: "47567,1км", isLight: false, colorWidth: "100%" },
+						{ id: 6, type: 1, text: "Тупрок йуллар", linearText: "39422,4км", isLight: true, colorWidth: "85%" }
+					]
+				},
+				{
+					id: 6,
+					title: "Техникалар сони",
+					right: [
+						{ id: 1, type: 1, text: "Умумий", linearText: "6052", isLight: true, colorWidth: "100%" },
+						{ id: 2, type: 1, text: "Автотранспорт ", linearText: "3138", isLight: false, colorWidth: "35%" },
+						{ id: 3, type: 1, text: "Машина механизм ", linearText: "2924", isLight: true, colorWidth: "40%" }
+					]
+				}
+			],
 			showNav: false,
 			focusName: false,
 			focusPhone: false,
