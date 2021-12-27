@@ -16,9 +16,9 @@
 			</div>
 			<div class="header__content container">
 				<div class="introduction">
-					<p class="introduction__heading">Ўзбекистондаги энг йирик йўл қурилиши харитаси статистикаси</p>
+					<p class="introduction__heading">Узбекистон Республика Автомобиль йуллари кумитаси томонидан жорий килинган Республика микёсида автомобиль йуллари холатини акс эттирувчи интерактив харита</p>
 
-					<p class="introduction__subHeading">Барча статистик маълумотларни куриш имкони</p>
+					<p class="introduction__subHeading">Барча статистик маълумотларни куриш 	имкони</p>
 
 					<div class="introduction__btns">
 						<p><a href="#contactUs">Қайта алоқага чиқиш</a></p>
@@ -190,9 +190,9 @@
 						<span> Республика ва ҳудудий жамғармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблағлар</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<!-- <span class="period">2006-2021 йиллар</span> -->
 					</div>
 				</div>
 
@@ -202,9 +202,9 @@
 						<span> Автомобиль йўллари соҳасига ажратиладиган ҳалкаро молия институтлар маблағлари</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money">1199,6</p>
+						<span class="currency">млн$</span>
+						<span class="period">2019-2025йил</span>
 					</div>
 				</div>
 
@@ -214,9 +214,9 @@
 						<span> Автомобиль йўллари соҳасига Ўзбекистон Республикасининг Тикланиш ва тараққиёт жамғармаси ажратмалари</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -228,9 +228,9 @@
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -243,9 +243,9 @@
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -255,9 +255,9 @@
 						<span> Ҳудудий жамғармаларга Республика жамғармасидан трансфертлар</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -271,9 +271,9 @@
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -287,9 +287,9 @@
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -302,9 +302,9 @@
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -317,9 +317,9 @@
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -332,9 +332,9 @@
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -345,12 +345,11 @@
 							(Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция
 							дастурлари ижроси бўйича маълумотла</span
 						>
-						р
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -364,9 +363,9 @@
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -380,9 +379,9 @@
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -392,9 +391,9 @@
 						<span> Утказилган тендерлар сони ва тежалган маблаг суммаси</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -404,9 +403,9 @@
 						<span> 1 км йул куриш уртача бозор нархи</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -416,9 +415,9 @@
 						<span> Йил давомида таъмирланган ва курилган йуллар хакида маълумот (км)</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -428,9 +427,9 @@
 						<span> Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган таъмирталаб йуллар</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 
@@ -441,9 +440,9 @@
 					</p>
 
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money">16565,8</p>
+						<span class="currency">км</span>
+						<span class="period">2021 йил</span>
 					</div>
 				</div>
 
@@ -454,9 +453,9 @@
 					</p>
 
 					<div class="moneyAmount">
-						<p class="money">2.4B</p>
-						<span class="currency">uzs</span>
-						<span class="period">2006-2021 йиллар</span>
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
 					</div>
 				</div>
 			</div>
@@ -464,30 +463,33 @@
 
 		<div class="compare">
 			<div class="container">
-				<p class="heading1">Қиёслаш</p>
+				<!-- <p class="heading1">Қиёслаш</p> -->
 
 				<div class="compare__wrapper" v-for="card in compareData" :key="card.id">
 					<div class="compare__wrapper-card">
-						<div class="title">{{ card.title }}</div>
+						<div class="title">
+							<span class="thumbali purple">{{card.id + 20}}</span>
+							<span>{{ card.title }}</span>
+							</div>
 						<div class="right">
 							<div class="right__row" v-for="right in card.right" :key="right.id">
-									<p v-if="right.type === 1" class="right__row-col right__row-left">
-										{{ right.text }}
-									</p>
-									<p v-if="right.type === 1" class="right__row-col right__row-right">
-										<span
-											data-aos="linear-chart"
-											:style="[
-												right.isLight
-													? { 'background-color': '#5BD0D0', maxWidth: right.colorWidth }
-													: { 'background-color': '#2473EA', maxWidth: right.colorWidth }
-											]"
-										/>
-										{{ right.linearText }}
-									</p>
-                  <!-- ; 'max-width': right.colorWidth  -->
-									<p v-if="right.type === 0" class="right__row-col right__row-left"></p>
-									<p v-if="right.type === 0" class="right__row-col right__row-right right__row-title">{{ right.title }}</p>
+								<p v-if="right.type === 1" class="right__row-col right__row-left">
+									{{ right.text }}
+								</p>
+								<p v-if="right.type === 1" class="right__row-col right__row-right">
+									<span
+										data-aos="linear-chart"
+										:style="[
+											right.isLight
+												? { 'background-color': '#5BD0D0', maxWidth: right.colorWidth }
+												: { 'background-color': '#2473EA', maxWidth: right.colorWidth }
+										]"
+									/>
+									{{ right.linearText }}
+								</p>
+								<!-- ; 'max-width': right.colorWidth  -->
+								<p v-if="right.type === 0" class="right__row-col right__row-left"></p>
+								<p v-if="right.type === 0" class="right__row-col right__row-right right__row-title">{{ right.title }}</p>
 							</div>
 						</div>
 					</div>
@@ -498,8 +500,8 @@
 		<div class="contactUs" id="contactUs">
 			<div class="container">
 				<p class="heading1">Биз билан боғланиш</p>
-				<p class="title">Республика ва ҳудудий жамгармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблаглар</p>
-				<div class="contactForm">
+				<!-- <p class="title">Республика ва ҳудудий жамгармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблаглар</p> -->
+				<form class="contactForm" action="./sendmail.php" method="POST">
 					<div class="contactForm__inputs">
 						<div class="name" :class="{ border: focusName }">
 							<div class="name__icon">
@@ -507,6 +509,7 @@
 							</div>
 							<div class="username">
 								<input
+									name="name"
 									@click="focusName = true"
 									@blur="focusName = false"
 									type="text"
@@ -529,6 +532,7 @@
 									type="text"
 									placeholder="Телефон"
 									id="phone"
+									name="phone"
 									class="username__input"
 								/>
 								<label for="phone" class="username__label">Телефон</label>
@@ -540,7 +544,15 @@
 								<span v-html="mail"></span>
 							</div>
 							<div class="username">
-								<input @click="focusMail = true" @blur="focusMail = false" type="mail" placeholder="E-mail" id="mail" class="username__input" />
+								<input
+									@click="focusMail = true"
+									@blur="focusMail = false"
+									type="mail"
+									name="email"
+									placeholder="E-mail"
+									id="mail"
+									class="username__input"
+								/>
 								<label for="mail" class="username__label">E-mail</label>
 							</div>
 						</div>
@@ -550,19 +562,26 @@
 								<span v-html="write"></span>
 							</div>
 							<div class="username">
-								<textarea @click="focusComment = true" @blur="focusComment = false" placeholder="Хабар" id="mail" class="username__input" />
+								<textarea
+									name="message"
+									@click="focusComment = true"
+									@blur="focusComment = false"
+									placeholder="Хабар"
+									id="mail"
+									class="username__input"
+								/>
 							</div>
 						</div>
 
-						<div class="submitBtn">
+						<button type="submit" class="submitBtn">
 							<p>Юбориш</p>
 							<span v-html="arrow"></span>
-						</div>
+						</button>
 					</div>
 					<div class="contactForm__image">
 						<span v-html="contact"></span>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 
@@ -593,24 +612,24 @@ export default {
 					title: "Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли маблағлар",
 					right: [
 						// { type: 0, linearText: "2021 йил" },
-						{ id: 1, type: 1, text: "2021 йил", linearText: "1109,8 млрд сўм", isLight: true, colorWidth: "80%" },
-						{ id: 2, type: 1, text: "2022 йил", linearText: "1220,7 млрд сўм", isLight: false, colorWidth: "100%" }
+						{ id: 1, type: 1, text: "2021 йил", linearText: "1109,8 млрд сум", isLight: true, colorWidth: "80%" },
+						{ id: 2, type: 1, text: "2022 йил", linearText: "1220,7 млрд сум", isLight: false, colorWidth: "100%" }
 					]
 				},
 				{
 					id: 2,
 					title: "Ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчалари учун махаллий вакиллик ҳокимияти органлари томонидан ажратилган маблаг (жорий этиладиган йиғимлардан тушумлар)",
 					right: [
-						{ id: 1, type: 1, text: "2021 йил", linearText: "3045,1км", isLight: true, colorWidth: "70%" },
-						{ id: 2, type: 1, text: "2022 йил", linearText: "3349,6км", isLight: false, colorWidth: "100%" }
+						{ id: 1, type: 1, text: "2021 йил", linearText: "586 687млн сум", isLight: true, colorWidth: "70%" },
+						{ id: 2, type: 1, text: "2022 йил", linearText: "390 630млн сум", isLight: false, colorWidth: "100%" }
 					]
 				},
 				{
 					id: 3,
 					title: "Автомобиль йўлларини қуриш, қайта қуриш, реконструкция қилиш ва таъмирлаш объектларида олиб борилаётган йўл қурилиш ишлари ҳақида маълумотлар",
 					right: [
-						{ id: 1, type: 1, text: "2021 йил", linearText: "586 687млн сўм", isLight: true, colorWidth: "80%" },
-						{ id: 2, type: 1, text: "2022 йил", linearText: "390 630млн сўм", isLight: false, colorWidth: "60%" }
+						{ id: 1, type: 1, text: "2021 йил", linearText: "3045,1км", isLight: true, colorWidth: "80%" },
+						{ id: 2, type: 1, text: "2022 йил", linearText: "3349,6км", isLight: false, colorWidth: "60%" }
 					]
 				},
 				{
@@ -626,10 +645,10 @@ export default {
 					id: 5,
 					title: "Тупрок йуллар ва шагал йуллар хакида маълумот (км)",
 					right: [
-						{ id: 1, type: 0, title: "2021 йил" },
+						{ id: 1, type: 0, title: "01/01/2021 холатига:" },
 						{ id: 2, type: 1, text: "Шагал йуллар", linearText: "47567,1км", isLight: false, colorWidth: "100%" },
 						{ id: 3, type: 1, text: "Тупрок йуллар", linearText: "39422,4км", isLight: true, colorWidth: "85%" },
-						{ id: 4, type: 0, title: "2021 йил" },
+						{ id: 4, type: 0, title: "01/01/2022 холатига:" },
 						{ id: 5, type: 1, text: "Шагал йуллар", linearText: "47567,1км", isLight: false, colorWidth: "100%" },
 						{ id: 6, type: 1, text: "Тупрок йуллар", linearText: "39422,4км", isLight: true, colorWidth: "85%" }
 					]
@@ -642,7 +661,7 @@ export default {
 						{ id: 2, type: 1, text: "Автотранспорт ", linearText: "3138", isLight: false, colorWidth: "35%" },
 						{ id: 3, type: 1, text: "Машина механизм ", linearText: "2924", isLight: true, colorWidth: "40%" }
 					]
-				}
+				},
 			],
 			showNav: false,
 			focusName: false,

@@ -42,6 +42,46 @@
 				font-size: 2.1rem;
 				line-height: 1.5;
 
+				display: flex;
+				
+				.thumbali {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding:.6rem 1.2rem;
+					width: 4.3rem;
+					height: 4.3rem;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 2.1rem;
+					line-height: 150%;
+					border-radius: 50%;
+					color: #fff;
+					transition: all 0.3s ease;
+					margin-right: 3rem;
+
+					&.lightGrey {
+						background-color: #d6d6d6;
+					  }
+					
+					  &.dolphin{
+						background-color: #36CFCF;
+					  }
+					  &.pink{
+						  background-color: #FFB1B1;
+					  }
+					  &.purple{
+						  background-color: #C39AF6;
+					  }
+					  &.grass{
+						  background-color: #DAEF5A;
+					  }
+					@media (max-width: 37.5em){
+					//  margin-bottom: 2rem;
+					}
+				  }
+
 				@media (max-width: 1400px) {
 					font-size: 1.8rem;
 					margin-right: 2rem;
