@@ -4,7 +4,7 @@
 
   .title {
     position: relative;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -65,7 +65,7 @@
           padding: 0 1.2rem;
           width: 100%;
           &__label {
-            font-family: Roboto;
+            font-family: Roboto, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 12px;
@@ -80,7 +80,7 @@
             height: 26rem;
           }
           &__input {
-            font-family: Roboto;
+            font-family: Roboto, sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
@@ -117,7 +117,7 @@
         padding: 2rem 5rem;
         background-color: #2b3b57;
         text-transform: uppercase;
-        font-family: Roboto;
+        font-family: Roboto, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 1.6rem;
@@ -187,7 +187,7 @@
     a {
       list-style: none;
       text-decoration: none;
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;

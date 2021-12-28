@@ -16,9 +16,12 @@
 			</div>
 			<div class="header__content container">
 				<div class="introduction">
-					<p class="introduction__heading">Узбекистон Республика Автомобиль йуллари кумитаси томонидан жорий килинган Республика микёсида автомобиль йуллари холатини акс эттирувчи интерактив харита</p>
+					<p class="introduction__heading">
+						Узбекистон Республикаси Автомобиль йуллари кумитаси томонидан жорий килинган Республика микёсидаги автомобиль йуллари холатини акс
+						эттирувчи интерактив харита
+					</p>
 
-					<p class="introduction__subHeading">Барча статистик маълумотларни куриш 	имкони</p>
+					<p class="introduction__subHeading">Барча статистик маълумотларни куриш имкони</p>
 
 					<div class="introduction__btns">
 						<p><a href="#contactUs">Қайта алоқага чиқиш</a></p>
@@ -48,125 +51,147 @@
 				<div class="lists">
 					<div class="leftSide">
 						<p class="item">
-							<a @click="showNav = false" href="#l1">
-								Республика ва ҳудудий жамғармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблағлар
-							</a>
+							<a @click="showNav = false" href="#l1"
+								>Республика ва ҳудудий жамғармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблағлар</a
+							>
 						</p>
 						<p class="item">
-							<a @click="showNav = false" href="#l2"> Автомобиль йўллари соҳасига ажратиладиган ҳалкаро молия институтлар маблағлари </a>
-						</p>
-
-						<p class="item">
-							<a @click="showNav = false" href="#l3">
-								Автомобиль йўллари соҳасига Ўзбекистон Республикасининг Тикланиш ва тараққиёт жамғармаси ажратмалари
-							</a>
+							<a @click="showNav = false" href="#l2">Автомобиль йўллари соҳасига ажратиладиган ҳалкаро молия институтлар маблағлари</a>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l4">
-								Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли
-								маблағлар
-							</a>
+							<a @click="showNav = false" href="#l3"
+								>Автомобиль йўллари соҳасига Ўзбекистон Республикасининг Тикланиш ва тараққиёт жамғармаси ажратмалари</a
+							>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l5">
-								Respublika va hududiy jamgarmalarga respublika byudjetidan har йил ajratiladigan maqsadli mablaglar
-							</a>
+							<a @click="showNav = false" href="#l4"
+								>Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган
+								мақсадли маблағлар</a
+							>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l6">
-								Umumiyfoydalanishdagi avtomobil yo’llarining ajratilgan mintaqalarida joylashgan yer uchastkalarida va inshootlarida tashqi
-								reklama obyektlari (konstruksiyalari) qurish uhun elektron auksionlar yakunlari bo’yicha huquq taqdim etishda tushadigan
-								mablag’lar, shuningdek, tashqi reklamalarning o’rnatilgan obyektlari (konstruksiyalari) uchun oylik to’lovlar
-							</a>
+							<a @click="showNav = false" href="#l5"
+								>Ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчалари учун махаллий вакиллик ҳокимияти органлари томонидан
+								ажратилган маблаг (жорий этиладиган йиғимлардан тушумлар)</a
+							>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l7">
-								Умумий фойдаланишдаги автомобиль йўлларининг ажратилган минтақаларида жойлашган ер участкаларида ва иншоотларида ташқи реклама
+							<a @click="showNav = false" href="#l6"
+								>Автомобиль йўллари ва кўчалар бўйлаб автомобиль сақлаш жойларидан фойдаланганлик учун тўловлардан келиб тушадиган маблағлар</a
+							>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l7"
+								>Транспорт воситаларини техник кўрикдан ўтказиш учун йиғимнинг базавий ставкасига қўшимча коэффициентларни қўллашдан тушадиган
+								маблағлар</a
+							>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l8">Ҳудудий жамғармаларга Республика жамғармасидан трансфертлар</a>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l9"
+								>Умумий фойдаланишдаги автомобиль йўлларининг ажратилган минтақаларида жойлашган ер участкаларида ва иншоотларида ташқи реклама
 								объектлари (конструкциялари) қуриш учун электрон аукционлар якунлари бўйича ҳуқуқ тақдим этишдан тушадиган маблағлар, шунингдек,
-								ташқи рекламанинг ўрнатилган объектлари (конструкциялари) учун ойлик тўловлар
-							</a>
+								ташқи рекламанинг ўрнатилган объектлари (конструкциялари) учун ойлик тўловлар</a
+							>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l8">
-								Умумий фойдаланишдаги автомобиль йўлларининг йўл бўйи минтақасида жойлашган ер участкаларида ишлаб чиқариш, хизматлар кўрсатиш,
+							<a @click="showNav = false" href="#l10"
+								>Умумий фойдаланишдаги автомобиль йўлларининг йўл бўйи минтақасида жойлашган ер участкаларида ишлаб чиқариш, хизматлар кўрсатиш,
 								савдо, сервис объектлари, шунингдек, тадбиркорлик фаолиятининг бошқа объектларини жойлаштириш ва қуриш учун мазкур ер
-								участкаларидан фойдаланиш ҳуқуқини реализация қилишдан тушадиган маблағлар
-							</a>
+								участкаларидан фойдаланиш ҳуқуқини реализация қилишдан тушадиган маблағлар</a
+							>
+						</p>
+						<p class="item">
+							<a @click="showNav = false" href="#l11"
+								>Автомобиль йўлларини қуриш, қайта қуриш, реконструкция қилиш ва таъмирлаш объектларида олиб борилаётган йўл қурилиш ишлари
+								ҳақида маълумотлар</a
+							>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l9">
-								Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда амалга оширилаётган ишлар тўғрисида батафсил маълумот
-								(йўлларни лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)
-							</a>
-						</p>
-
-						<p class="item">
-							<a @click="showNav = false" href="#l10">
-								Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
-								учун ажратилган маблағлар тўғрисида маълумот
-							</a>
+							<a @click="showNav = false" href="#l12"
+								>Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда амалга оширилаётган ишлар тўғрисида батафсил маълумот
+								(йўлларни лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)</a
+							>
 						</p>
 					</div>
 
 					<div class="leftSide">
 						<p class="item">
-							<a @click="showNav = false" href="#l11">
-								Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
-								тўғрисида маълумот
-							</a>
+							<a @click="showNav = false" href="#l13"
+								>Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
+								учун ажратилган маблағлар тўғрисида маълумот</a
+							>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l12">
-								(Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция
-								дастурлари ижроси бўйича маълумотлар
-							</a>
+							<a @click="showNav = false" href="#l14"
+								>Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
+								тўғрисида маълумот</a
+							>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l13">
-								Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
+							<a @click="showNav = false" href="#l15"
+								>(Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция
+								дастурлари ижроси бўйича маълумотлар</a
+							>
+						</p>
+
+						<p class="item">
+							<a @click="showNav = false" href="#l16"
+								>Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
 								уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатномалар тўғрисида
-								маълумотлар
-							</a>
+								маълумотлар</a
+							>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l14">
-								Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
+							<a @click="showNav = false" href="#l17"
+								>Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
 								уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатнома талабларини
-								бажармаслик, шунингдек йўлларни сақлаш қоидаларини бузиш ҳолатлари бўйича маълумотлар
-							</a>
+								бажармаслик, шунингдек йўлларни сақлаш қоидаларини бузиш ҳолатлари бўйича маълумотлар</a
+							>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l15"> Утказилган тендерлар сони ва тежалган маблаг суммаси </a>
+							<a @click="showNav = false" href="#l18">Юк ташиш воситаларига берилган рухсатномалар сони </a>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l16"> 1км йул куриш уртача бозор нархи </a>
+							<a @click="showNav = false" href="#l19">Утказилган тендерлар сони ва тежалган маблаг суммаси</a>
 						</p>
 
 						<p class="item">
-							<a @click="showNav = false" href="#l17"> Йил давомида таъмирланган ва курилган йуллар хакида маълумот (км) </a>
+							<a @click="showNav = false" href="#l20">1км йул куриш уртача бозор нархи</a>
 						</p>
-
 						<p class="item">
-							<a @click="showNav = false" href="#l18"> Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган таъмирталаб йуллар </a>
+							<a @click="showNav = false" href="#l21">Йил давомида таъмирланган ва курилган йуллар хакида маълумот (км)</a>
 						</p>
-
 						<p class="item">
-							<a @click="showNav = false" href="#l19"> Ички йуллар хакида маълумот (3 йиллик йул харитаси) </a>
+							<a @click="showNav = false" href="#l22">Тупрок йуллар ва шагал йуллар хакида маълумот (км)</a>
 						</p>
-
 						<p class="item">
-							<a @click="showNav = false" href="#l20"> Асфальт ишлаб чикарувчи корхоналар </a>
+							<a @click="showNav = false" href="#l23">Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган таъмирталаб йуллар</a>
+						</p>
+						<p class="item">
+							<a @click="showNav = false" href="#l24">Ички йуллар хакида маълумот </a>
+						</p>
+						<p class="item">
+							<a @click="showNav = false" href="#l25">Асфальт ишлаб чикарувчи корхоналар</a>
+						</p>
+						<p class="item">
+							<a @click="showNav = false" href="#l26">Техникалар сони</a>
 						</p>
 					</div>
 				</div>
@@ -184,48 +209,77 @@
 				<div class="statistics__heading">
 					<p class="heading1">Aвтомобил йўллари соҳасидаги очиқ статистикалар рўйхати</p>
 				</div>
+
 				<div class="statistic">
 					<p class="info" id="l1">
-						<span class="thumbali lightGrey">1 </span>
-						<span> Республика ва ҳудудий жамғармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблағлар</span>
+						<span class="thumbali pink">1 </span>
+						<span>Республика ва ҳудудий жамғармаларга республика бюджетидан ҳар йили ажратиладиган мақсадли маблағлар</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<!-- <span class="period">2006-2021 йиллар</span> -->
+						<p class="money">2021йил - 5942,5млрд</p>
+						<span class="currency">сум</span>
+						<span class="period">2022йил - 4820,4млрд</span>
 					</div>
 				</div>
 
 				<div class="statistic">
 					<p class="info" id="l2">
-						<span class="thumbali dolphin">2</span>
-						<span> Автомобиль йўллари соҳасига ажратиладиган ҳалкаро молия институтлар маблағлари</span>
+						<span class="thumbali pink">2</span>
+						<span>Автомобиль йўллари соҳасига ажратиладиган ҳалкаро молия институтлар маблағлари</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money">1199,6</p>
-						<span class="currency">млн$</span>
-						<span class="period">2019-2025йил</span>
+						<p class="money">1199,6 млн</p>
+						<span class="currency">$</span>
+						<span class="period">2019-2025 йиллар</span>
 					</div>
 				</div>
 
 				<div class="statistic">
 					<p class="info" id="l3">
 						<span class="thumbali pink">3</span>
-						<span> Автомобиль йўллари соҳасига Ўзбекистон Республикасининг Тикланиш ва тараққиёт жамғармаси ажратмалари</span>
+						<span>Автомобиль йўллари соҳасига Ўзбекистон Республикасининг Тикланиш ва тараққиёт жамғармаси ажратмалари</span>
 					</p>
 					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<span class="period"></span>
+						<p class="money">2021йил – 2847,9млрд</p>
+						<span class="currency">сум</span>
+						<!-- <span class="period"></span> -->
 					</div>
 				</div>
 
 				<div class="statistic">
 					<p class="info" id="l4">
-						<span class="thumbali purple">4</span>
-						<span>
-							Автомобиль йўллари ва кўчалар бўйлаб автомобиль сақлаш жойларидан фойдаланганлик учун тўловлардан келиб тушадиган маблағлар</span
+						<span class="thumbali pink">4</span>
+						<span
+							>Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли
+							маблағлар</span
 						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2021йил – 1109,8млрд</p>
+						<span class="currency">сум</span>
+						<span class="period">2022йил - 1220,7млрд</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l5">
+						<span class="thumbali pink">5</span>
+						<span
+							>Ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчалари учун махаллий вакиллик ҳокимияти органлари томонидан ажратилган
+							маблаг (жорий этиладиган йиғимлардан тушумлар)</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money">2021йил – 586 687млн</p>
+						<span class="currency">сум</span>
+						<span class="period">2022йил – 390 630млн</span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l6">
+						<span class="thumbali pink">6</span>
+						<span>Автомобиль йўллари ва кўчалар бўйлаб автомобиль сақлаш жойларидан фойдаланганлик учун тўловлардан келиб тушадиган маблағлар</span>
 					</p>
 					<div class="moneyAmount">
 						<p class="money"></p>
@@ -235,10 +289,10 @@
 				</div>
 
 				<div class="statistic">
-					<p class="info" id="l5">
-						<span class="thumbali grass">5</span>
-						<span>
-							Транспорт воситаларини техник кўрикдан ўтказиш учун йиғимнинг базавий ставкасига қўшимча коэффициентларни қўллашдан тушадиган
+					<p class="info" id="l7">
+						<span class="thumbali pink">7</span>
+						<span
+							>Транспорт воситаларини техник кўрикдан ўтказиш учун йиғимнинг базавий ставкасига қўшимча коэффициентларни қўллашдан тушадиган
 							маблағлар</span
 						>
 					</p>
@@ -250,9 +304,9 @@
 				</div>
 
 				<div class="statistic">
-					<p class="info" id="l6">
-						<span class="thumbali lightGrey">6</span>
-						<span> Ҳудудий жамғармаларга Республика жамғармасидан трансфертлар</span>
+					<p class="info" id="l8">
+						<span class="thumbali pink">8</span>
+						<span>Ҳудудий жамғармаларга Республика жамғармасидан трансфертлар</span>
 					</p>
 					<div class="moneyAmount">
 						<p class="money"></p>
@@ -262,10 +316,10 @@
 				</div>
 
 				<div class="statistic">
-					<p class="info" id="l7">
-						<span class="thumbali purple">7</span>
-						<span>
-							Умумий фойдаланишдаги автомобиль йўлларининг ажратилган минтақаларида жойлашган ер участкаларида ва иншоотларида ташқи реклама
+					<p class="info" id="l9">
+						<span class="thumbali pink">9</span>
+						<span
+							>Умумий фойдаланишдаги автомобиль йўлларининг ажратилган минтақаларида жойлашган ер участкаларида ва иншоотларида ташқи реклама
 							объектлари (конструкциялари) қуриш учун электрон аукционлар якунлари бўйича ҳуқуқ тақдим этишдан тушадиган маблағлар, шунингдек,
 							ташқи рекламанинг ўрнатилган объектлари (конструкциялари) учун ойлик тўловлар</span
 						>
@@ -278,10 +332,10 @@
 				</div>
 
 				<div class="statistic">
-					<p class="info" id="l8">
-						<span class="thumbali grass">8</span>
-						<span>
-							Умумий фойдаланишдаги автомобиль йўлларининг йўл бўйи минтақасида жойлашган ер участкаларида ишлаб чиқариш, хизматлар кўрсатиш,
+					<p class="info" id="l10">
+						<span class="thumbali pink">10</span>
+						<span
+							>Умумий фойдаланишдаги автомобиль йўлларининг йўл бўйи минтақасида жойлашган ер участкаларида ишлаб чиқариш, хизматлар кўрсатиш,
 							савдо, сервис объектлари, шунингдек, тадбиркорлик фаолиятининг бошқа объектларини жойлаштириш ва қуриш учун мазкур ер участкаларидан
 							фойдаланиш ҳуқуқини реализация қилишдан тушадиган маблағлар</span
 						>
@@ -294,56 +348,26 @@
 				</div>
 
 				<div class="statistic">
-					<p class="info" id="l9">
-						<span class="thumbali pink">9</span>
-						<span>
-							Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда амалга оширилаётган ишлар тўғрисида батафсил маълумот (йўлларни
-							лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)</span
-						>
-					</p>
-					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<span class="period"></span>
-					</div>
-				</div>
-
-				<div class="statistic">
-					<p class="info" id="l10">
-						<span class="thumbali purple">10</span>
-						<span>
-							Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари учун
-							ажратилган маблағлар тўғрисида маълумот</span
-						>
-					</p>
-					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<span class="period"></span>
-					</div>
-				</div>
-
-				<div class="statistic">
 					<p class="info" id="l11">
-						<span class="thumbali lightGrey">11</span>
-						<span>
-							Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
-							тўғрисида маълумот</span
+						<span class="thumbali pink">11</span>
+						<span
+							>Автомобиль йўлларини қуриш, қайта қуриш, реконструкция қилиш ва таъмирлаш объектларида олиб борилаётган йўл қурилиш ишлари ҳақида
+							маълумотлар</span
 						>
 					</p>
 					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<span class="period"></span>
+						<p class="money">2021йил – 3045,1</p>
+						<span class="currency">км</span>
+						<span class="period">2022йил – 3349,6</span>
 					</div>
 				</div>
 
 				<div class="statistic">
 					<p class="info" id="l12">
-						<span class="thumbali dolphin">12</span>
-						<span>
-							(Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция
-							дастурлари ижроси бўйича маълумотла</span
+						<span class="thumbali pink">12</span>
+						<span
+							>Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда амалга оширилаётган ишлар тўғрисида батафсил маълумот (йўлларни
+							лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)</span
 						>
 					</p>
 					<div class="moneyAmount">
@@ -356,8 +380,53 @@
 				<div class="statistic">
 					<p class="info" id="l13">
 						<span class="thumbali pink">13</span>
-						<span>
-							Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
+						<span
+							>Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
+							учун ажратилган маблағлар тўғрисида маълумот</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l14">
+						<span class="thumbali pink">14</span>
+						<span
+							>Сув хўжалиги вазирлиги қарамоғидаги идоравий йўллар ва кўприклар ҳолати, уларни реконструкция қилиш, таъмирлаш ва сақлаш ишлари
+							тўғрисида маълумот</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l15">
+						<span class="thumbali pink">15</span>
+						<span
+							>(Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция
+							дастурлари ижроси бўйича маълумотлар</span
+						>
+					</p>
+					<div class="moneyAmount">
+						<p class="money"></p>
+						<span class="currency"></span>
+						<span class="period"></span>
+					</div>
+				</div>
+
+				<div class="statistic">
+					<p class="info" id="l16">
+						<span class="thumbali pink">16</span>
+						<span
+							>Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
 							уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатномалар тўғрисида
 							маълумотлар</span
 						>
@@ -370,88 +439,14 @@
 				</div>
 
 				<div class="statistic">
-					<p class="info" id="l14">
-						<span class="thumbali lightGrey">14</span>
-						<span>
-							Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
+					<p class="info" id="l17">
+						<span class="thumbali pink">17</span>
+						<span
+							>Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
 							уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатнома талабларини
 							бажармаслик, шунингдек йўлларни сақлаш қоидаларини бузиш ҳолатлари бўйича маълумотлар</span
 						>
 					</p>
-					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<span class="period"></span>
-					</div>
-				</div>
-
-				<div class="statistic">
-					<p class="info" id="l15">
-						<span class="thumbali grass">15</span>
-						<span> Утказилган тендерлар сони ва тежалган маблаг суммаси</span>
-					</p>
-					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<span class="period"></span>
-					</div>
-				</div>
-
-				<div class="statistic">
-					<p class="info" id="l16">
-						<span class="thumbali purple">16</span>
-						<span> 1 км йул куриш уртача бозор нархи</span>
-					</p>
-					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<span class="period"></span>
-					</div>
-				</div>
-
-				<div class="statistic">
-					<p class="info" id="l17">
-						<span class="thumbali pink">17</span>
-						<span> Йил давомида таъмирланган ва курилган йуллар хакида маълумот (км)</span>
-					</p>
-					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<span class="period"></span>
-					</div>
-				</div>
-
-				<div class="statistic">
-					<p class="info" id="l18">
-						<span class="thumbali grass">18</span>
-						<span> Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган таъмирталаб йуллар</span>
-					</p>
-					<div class="moneyAmount">
-						<p class="money"></p>
-						<span class="currency"></span>
-						<span class="period"></span>
-					</div>
-				</div>
-
-				<div class="statistic">
-					<p class="info" id="l19">
-						<span class="thumbali lightGrey">19</span>
-						<span> Ички йуллар хакида маълумот (3 йиллик йул харитаси)</span>
-					</p>
-
-					<div class="moneyAmount">
-						<p class="money">16565,8</p>
-						<span class="currency">км</span>
-						<span class="period">2021 йил</span>
-					</div>
-				</div>
-
-				<div class="statistic">
-					<p class="info" id="l20">
-						<span class="thumbali pink">20</span>
-						<span> Асфальт ишлаб чикарувчи корхоналар </span>
-					</p>
-
 					<div class="moneyAmount">
 						<p class="money"></p>
 						<span class="currency"></span>
@@ -464,13 +459,14 @@
 		<div class="compare">
 			<div class="container">
 				<!-- <p class="heading1">Қиёслаш</p> -->
-
 				<div class="compare__wrapper" v-for="card in compareData" :key="card.id">
-					<div class="compare__wrapper-card">
+					<div class="compare__wrapper-card" :id="'l' + card.id">
 						<div class="title">
-							<span class="thumbali purple">{{card.id + 20}}</span>
+							<span class="thumbali purple">{{ card.id }}</span>
 							<span>{{ card.title }}</span>
-							</div>
+						</div>
+
+						
 						<div class="right">
 							<div class="right__row" v-for="right in card.right" :key="right.id">
 								<p v-if="right.type === 1" class="right__row-col right__row-left">
@@ -509,6 +505,7 @@
 							</div>
 							<div class="username">
 								<input
+									required
 									name="name"
 									@click="focusName = true"
 									@blur="focusName = false"
@@ -527,6 +524,7 @@
 							</div>
 							<div class="username">
 								<input
+									required
 									@click="focusPhone = true"
 									@blur="focusPhone = false"
 									type="text"
@@ -545,6 +543,7 @@
 							</div>
 							<div class="username">
 								<input
+									required
 									@click="focusMail = true"
 									@blur="focusMail = false"
 									type="mail"
@@ -563,6 +562,7 @@
 							</div>
 							<div class="username">
 								<textarea
+									required
 									name="message"
 									@click="focusComment = true"
 									@blur="focusComment = false"
@@ -604,64 +604,78 @@
 // @ is an alias to /src
 export default {
 	name: "Home",
+	metaInfo: {
+		// if no subcomponents specify a metaInfo.title, this title will be used
+		title: "Shaffofyul.uz",
+		// all titles will be injected into this template
+		titleTemplate: "%s | Shaffofyul.uz"
+	},
 	data() {
 		return {
 			compareData: [
 				{
-					id: 1,
-					title: "Умумий фойдаланишдаги автомобиль йўлларида жорий таъмирлаш ва сақлаш ишларини молиялаштириш учун ҳар йили ажратиладиган мақсадли маблағлар",
+					id: 18,
+					title: "Юк ташиш воситаларига берилган рухсатномалар сони",
 					right: [
-						// { type: 0, linearText: "2021 йил" },
+						{ id: 1, type: 1, text: "Муваффақиятли", linearText: "2576", isLight: true, colorWidth: "85.8%" },
+						{ id: 2, type: 1, text: "Келишув жараёнида", linearText: "70", isLight: false, colorWidth: "22.4%" },
+						{ id: 3, type: 1, text: "Тўлдириш жараёнида", linearText: "354", isLight: true, colorWidth: "31.8%" }
+					]
+				},
+				{
+					id: 19,
+					title: "Утказилган тендерлар сони ва тежалган маблаг суммаси",
+					right: [
 						{ id: 1, type: 1, text: "2021 йил", linearText: "1109,8 млрд сум", isLight: true, colorWidth: "80%" },
 						{ id: 2, type: 1, text: "2022 йил", linearText: "1220,7 млрд сум", isLight: false, colorWidth: "100%" }
 					]
 				},
 				{
-					id: 2,
-					title: "Ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчалари учун махаллий вакиллик ҳокимияти органлари томонидан ажратилган маблаг (жорий этиладиган йиғимлардан тушумлар)",
-					right: [
-						{ id: 1, type: 1, text: "2021 йил", linearText: "586 687млн сум", isLight: true, colorWidth: "70%" },
-						{ id: 2, type: 1, text: "2022 йил", linearText: "390 630млн сум", isLight: false, colorWidth: "100%" }
-					]
+					id: 20,
+					title: "1км йул куриш уртача бозор нархи",
+					right: [{ id: 1, type: 1, text: "", linearText: "", isLight: true, colorWidth: "0%" }]
 				},
 				{
-					id: 3,
-					title: "Автомобиль йўлларини қуриш, қайта қуриш, реконструкция қилиш ва таъмирлаш объектларида олиб борилаётган йўл қурилиш ишлари ҳақида маълумотлар",
-					right: [
-						{ id: 1, type: 1, text: "2021 йил", linearText: "3045,1км", isLight: true, colorWidth: "80%" },
-						{ id: 2, type: 1, text: "2022 йил", linearText: "3349,6км", isLight: false, colorWidth: "60%" }
-					]
+					id: 21,
+					title: "Йил давомида таъмирланган ва курилган йуллар хакида маълумот (км)",
+					right: [{ id: 1, type: 1, text: "2021 йил", linearText: "19 806,1 км", isLight: true, colorWidth: "100%" }]
 				},
 				{
-					id: 4,
-					title: "Юк ташиш воситаларига берилган рухсатномалар сони ",
-					right: [
-						{ id: 1, type: 1, text: "Муваффақиятли", linearText: "2576", isLight: true, colorWidth: "90%" },
-						{ id: 2, type: 1, text: "Келишув жараёнида", linearText: "70", isLight: false, colorWidth: "30%" },
-						{ id: 3, type: 1, text: "Тўлдириш жараёнида", linearText: "354", isLight: true, colorWidth: "40%" }
-					]
-				},
-				{
-					id: 5,
+					id: 22,
 					title: "Тупрок йуллар ва шагал йуллар хакида маълумот (км)",
 					right: [
 						{ id: 1, type: 0, title: "01/01/2021 холатига:" },
-						{ id: 2, type: 1, text: "Шагал йуллар", linearText: "47567,1км", isLight: false, colorWidth: "100%" },
-						{ id: 3, type: 1, text: "Тупрок йуллар", linearText: "39422,4км", isLight: true, colorWidth: "85%" },
+						{ id: 2, type: 1, text: "Шагал йуллар", linearText: "47 567,1 км", isLight: false, colorWidth: "55%" },
+						{ id: 3, type: 1, text: "Тупрок йуллар", linearText: "39 422,4 км", isLight: true, colorWidth: "45%" },
 						{ id: 4, type: 0, title: "01/01/2022 холатига:" },
-						{ id: 5, type: 1, text: "Шагал йуллар", linearText: "47567,1км", isLight: false, colorWidth: "100%" },
-						{ id: 6, type: 1, text: "Тупрок йуллар", linearText: "39422,4км", isLight: true, colorWidth: "85%" }
+						{ id: 5, type: 1, text: "Шагал йуллар", linearText: "55 967,5 км", isLight: false, colorWidth: "86.5%" },
+						{ id: 6, type: 1, text: "Тупрок йуллар", linearText: "28 164,2 км", isLight: true, colorWidth: "53.5%" }
 					]
 				},
 				{
-					id: 6,
+					id: 23,
+					title: "Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган таъмирталаб йуллар",
+					right: [{ id: 1, type: 1, text: "", linearText: "", isLight: true, colorWidth: "0%" }]
+				},
+				{
+					id: 24,
+					title: "Ички йуллар хакида маълумот",
+					right: [{ id: 1, type: 1, text: "Таъмирланган 2021 йил", linearText: "16565,8км", isLight: false, colorWidth: "100%" }]
+				},
+				{
+					id: 25,
+					title: "Асфальт ишлаб чикарувчи корхоналар",
+					right: [{ id: 1, type: 1, text: "Сони", linearText: "102 та", isLight: true, colorWidth: "100%" }]
+				},
+				{
+					id: 26,
 					title: "Техникалар сони",
 					right: [
-						{ id: 1, type: 1, text: "Умумий", linearText: "6052", isLight: true, colorWidth: "100%" },
-						{ id: 2, type: 1, text: "Автотранспорт ", linearText: "3138", isLight: false, colorWidth: "35%" },
-						{ id: 3, type: 1, text: "Машина механизм ", linearText: "2924", isLight: true, colorWidth: "40%" }
+						{ id: 1, type: 1, text: "Умумий", linearText: "6062 та", isLight: true, colorWidth: "100%" },
+						{ id: 2, type: 1, text: "Автотранспорт ", linearText: "3138 та", isLight: false, colorWidth: "51%" },
+						{ id: 3, type: 1, text: "Машина механизм ", linearText: "2924 та", isLight: true, colorWidth: "49%" }
 					]
-				},
+				}
 			],
 			showNav: false,
 			focusName: false,

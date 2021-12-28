@@ -4,7 +4,9 @@
   background-image: url(../images/headerBackground.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  // height: 100%;
+  padding-bottom: 20rem;
+  overflow: hidden;
 
   &__heading {
     padding-top: 4rem;
@@ -18,7 +20,7 @@
       align-items: center;
       cursor: pointer;
 
-      &__logo {
+      &__logo { 
         border-right: 1px solid #ffffff;
         padding-right: 1.2rem;
         width: 4.5rem;
@@ -27,7 +29,7 @@
 
       &__name {
         padding-left: 1.2rem;
-        font-family: Roboto, sans-serif;
+        font-family: Roboto, sans-serif, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 1.6rem;
@@ -91,7 +93,7 @@
       }
       
       &__subHeading {
-        font-family: Roboto;
+        font-family: Roboto, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 1.6rem;
@@ -107,7 +109,7 @@
           text-decoration: none;
           padding: 2rem 3.2rem;
           color: #fff;
-          font-family: Roboto;
+          font-family: Roboto, sans-serif;
           font-style: normal;
           font-weight: bold;
           font-size: 1.6rem;
