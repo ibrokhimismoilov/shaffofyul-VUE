@@ -466,7 +466,6 @@
 							<span>{{ card.title }}</span>
 						</div>
 
-						
 						<div class="right">
 							<div class="right__row" v-for="right in card.right" :key="right.id">
 								<p v-if="right.type === 1" class="right__row-col right__row-left">
