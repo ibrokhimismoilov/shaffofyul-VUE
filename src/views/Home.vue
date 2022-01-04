@@ -1,13 +1,19 @@
 <template>
 	<div class="home">
+		<marquee style="
+    padding: 1.5rem 3rem;
+    text-align: center;
+    font-family: sans-serif;
+    color: red;
+    font-size: 2.4rem;
+    display: block;
+    background: rgba(255, 0, 0, .1);
+">САЙТ ТЕСТ ХОЛАТИДА ИШЛАМОКДА</marquee>
 		<div id="header" class="header">
 			<div class="container header__heading">
 				<div class="logoBox">
 					<img src="../assets/images/whiteLogo.png" alt="logo" class="logoBox__logo" />
-					<p class="logoBox__name">
-						Shaffofyul <br />
-						Development
-					</p>
+					
 				</div>
 				<div class="navigation" @click="showNav = !showNav">
 					<p>Статистика</p>
