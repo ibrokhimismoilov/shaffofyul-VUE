@@ -1,19 +1,21 @@
 <template>
 	<div class="home">
-		<marquee style="
-    padding: 1.5rem 3rem;
-    text-align: center;
-    font-family: sans-serif;
-    color: red;
-    font-size: 2.4rem;
-    display: block;
-    background: rgba(255, 0, 0, .1);
-">САЙТ ТЕСТ ХОЛАТИДА ИШЛАМОКДА</marquee>
+		<marquee
+			style="
+				padding: 1.5rem 3rem;
+				text-align: center;
+				font-family: sans-serif;
+				color: red;
+				font-size: 2.4rem;
+				display: block;
+				background: rgba(255, 0, 0, 0.1);
+			"
+			>САЙТ ТЕСТ ХОЛАТИДА ИШЛАМОКДА</marquee
+		>
 		<div id="header" class="header">
 			<div class="container header__heading">
 				<div class="logoBox">
 					<img src="../assets/images/whiteLogo.png" alt="logo" class="logoBox__logo" />
-					
 				</div>
 				<div class="navigation" @click="showNav = !showNav">
 					<p>Статистика</p>
@@ -371,10 +373,11 @@
 				<div class="statistic">
 					<p class="info" id="l12">
 						<span class="thumbali pink">12</span>
-						<span
-							>Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда амалга оширилаётган ишлар тўғрисида батафсил маълумот (йўлларни
-							лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)</span
-						>
+						<span>
+							Автомобиль йўлларини, шу жумладан, ички хўжалик йўллари ва шаҳарлар, бошқа аҳоли пунктлари кўчаларини ўзбошимчалик билан қазиш,
+							уларда сунъий нотекисликлар ва тўсиқлар яратиш, автомобиль йўлида ишларни амалга ошириш учун берилган рухсатнома талабларини
+							бажармаслик, шунингдек йўлларни сақлаш қоидаларини бузиш ҳолатлари бўйича маълумотлар
+						</span>
 					</p>
 					<div class="moneyAmount">
 						<p class="money"></p>
@@ -413,14 +416,27 @@
 					</div>
 				</div>
 
-				<div class="statistic">
+				<div class="statistic statistic_dropdown">
 					<p class="info" id="l15">
 						<span class="thumbali pink">15</span>
-						<span
-							>(Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция
-							дастурлари ижроси бўйича маълумотлар</span
+						<span>
+							(Норматив ҳужжатлар билан тасдиқланган) автомобиль йўллари соҳасини ривожлантиришга оид “йўл хариталар”, давлат ва инвестиция
+							дастурлари ижроси бўйича маълумотлар ...</span
 						>
 					</p>
+					<div class="statistic_dropdown-inner">
+						<p>
+							1. Ўзбекистон Республикаси Президентининг 2018 йил 12 майдаги “Ўзбекистон Республикаси ва Туркия Республикаси ўртасидаги хамкорликни
+							янада мустаҳкамлаш ва ривожлантириш чора-тадбирлари тўғрисида”ги ПҚ-3717- сонли қарори билан Автомобиль йўллари қўмитасига
+							Туркиянинг “Женгиз, “Колин” ва “Калён” компаниялари билан давлат-хусусий шерикчилик тамойили асосида автомобиль йўлларини қўриш
+							бўйича битимини амалга ошириш белгиланган.
+						</p>
+						<p>
+							2. Ўзбекистон Республикаси Президентининг 2019 йил 1 февралдаги ПҚ-4145-сонли “Ўзбекистон Республикаси ва Германия Федератив
+							Республикаси ўртасидаги кўп қиррали ҳамкорликни янада кенгайтириш чора-тадбирлари тўғрисида”ги қарори билан Автомобиль йўллари
+							қўмитасига асфальтобетон қоришмаларини ишлаб чиқиш бўйича қўшма корхона ташкил этиш белгиланган.
+						</p>
+					</div>
 					<div class="moneyAmount">
 						<p class="money"></p>
 						<span class="currency"></span>
@@ -444,7 +460,7 @@
 					</div>
 				</div>
 
-				<div class="statistic">
+				<!--<div class="statistic">
 					<p class="info" id="l17">
 						<span class="thumbali pink">17</span>
 						<span
@@ -458,7 +474,7 @@
 						<span class="currency"></span>
 						<span class="period"></span>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 
@@ -474,7 +490,7 @@
 
 						<div class="right">
 							<div class="right__row" v-for="right in card.right" :key="right.id">
-								<p v-if="right.type === 1" class="right__row-col right__row-left">
+								<p v-if="right.type === 1" class="right__row-col right__row-left bb-dashed">
 									{{ right.text }}
 								</p>
 								<p v-if="right.type === 1" class="right__row-col right__row-right">
@@ -619,6 +635,45 @@ export default {
 		return {
 			compareData: [
 				{
+					id: 17,
+					title: "Вилоят, шаҳар ва туманлар кесимида тегишлилиги бўйича объектларда амалга оширилаётган ишлар тўғрисида батафсил маълумот (йўлларни лойиҳалаш, қуриш, таъмирлаш ва сақлаш ишлари ҳаражатлар сметаси)",
+					right: [
+						{ id: 1, type: 0, title: "2021 йил даврида" },
+						{
+							id: 2,
+							type: 1,
+							text: "Умумий фойдаланишдаги автомобиль йулларини куриш, кайта куриш.",
+							linearText: "126,6км",
+							isLight: true,
+							colorWidth: "85%"
+						},
+						{
+							id: 3,
+							type: 1,
+							text: "Умумий фойдаланишдаги автомобиль йулларини тула таъмирлаш.",
+							linearText: "118,4км",
+							isLight: false,
+							colorWidth: "60%"
+						},
+						{
+							id: 4,
+							type: 1,
+							text: "Умумий фойдаланишдаги автомобиль йулларини жорий таъмирлаш.",
+							linearText: "3349,6км",
+							isLight: true,
+							colorWidth: "50%"
+						},
+						{
+							id: 5,
+							type: 1,
+							text: "Ички хужалик йулларини кури шва таъмирлаш.",
+							linearText: "16565,8км",
+							isLight: false,
+							colorWidth: "67%"
+						}
+					]
+				},
+				{
 					id: 18,
 					title: "Юк ташиш воситаларига берилган рухсатномалар сони",
 					right: [
@@ -631,14 +686,51 @@ export default {
 					id: 19,
 					title: "Утказилган тендерлар сони ва тежалган маблаг суммаси",
 					right: [
-						{ id: 1, type: 1, text: "2021 йил", linearText: "1109,8 млрд сум", isLight: true, colorWidth: "80%" },
-						{ id: 2, type: 1, text: "2022 йил", linearText: "1220,7 млрд сум", isLight: false, colorWidth: "100%" }
+						{ id: 1, type: 0, title: "2021 йил даврида" },
+						{ id: 2, type: 1, text: "Тендерлар сони", linearText: "199 та", isLight: true, colorWidth: "80%" },
+						{ id: 3, type: 1, text: "Тежамкорлик", linearText: "109,0 млрд сўм", isLight: false, colorWidth: "100%" }
 					]
 				},
 				{
 					id: 20,
-					title: "1км йул куриш уртача бозор нархи",
-					right: [{ id: 1, type: 1, text: "", linearText: "", isLight: true, colorWidth: "0%" }]
+					title: "1км йул куриш уртача бозор нархи \n * Кўрсатилаган барча қийматлар тахминий ҳисобланган бўлиб асл қийматлар лойиҳа-смета ҳужжатларига асосан аниқлаштирилади",
+					right: [
+						{ id: 1, type: 0, title: "Асфальтбетон коплама билан кишлок ва бошка ахоли яшаш пунктлари ички йуллари:" },
+						{ id: 2, type: 1, text: "Куриш", linearText: "675 млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 3, type: 1, text: "Реконструкция килиш", linearText: "540млн сум", isLight: false, colorWidth: "100%" },
+						{ id: 4, type: 1, text: "Тула таъмирлаш", linearText: "337,5млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 5, type: 1, text: "Ободонлаштириш ва кукаламзорлаштириш", linearText: "350млн сум", isLight: false, colorWidth: "100%" },
+
+						{ id: 1, type: 0, title: "Шахар кучалари:" },
+						{ id: 2, type: 1, text: "Куриш", linearText: "6423,9 млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 3, type: 1, text: "Реконструкция килиш", linearText: "6197,1млн сум", isLight: false, colorWidth: "100%" },
+						{ id: 4, type: 1, text: "Тула таъмирлаш", linearText: "4527,6млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 5, type: 1, text: "Ободонлаштириш ва кукаламзорлаштириш", linearText: "1616,3млн сум", isLight: false, colorWidth: "100%" },
+
+						{ id: 1, type: 0, title: "Маҳаллий аҳамиятдаги автомобиль йўллари:" },
+						{ id: 2, type: 1, text: "Куриш", linearText: "7000 млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 3, type: 1, text: "Реконструкция килиш", linearText: "6500млн сум", isLight: false, colorWidth: "100%" },
+						{ id: 4, type: 1, text: "Тула таъмирлаш", linearText: "4000млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 5, type: 1, text: "Ободонлаштириш ва кукаламзорлаштириш", linearText: "1000млн сум", isLight: false, colorWidth: "100%" },
+
+						{ id: 1, type: 0, title: "Давлат аҳамиятидаги (2-тасмали) автомобиль йўллари" },
+						{ id: 2, type: 1, text: "Куриш", linearText: "10000 млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 3, type: 1, text: "Реконструкция килиш", linearText: "9500млн сум", isLight: false, colorWidth: "100%" },
+						{ id: 4, type: 1, text: "Тула таъмирлаш", linearText: "6000млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 5, type: 1, text: "Ободонлаштириш ва кукаламзорлаштириш", linearText: "1400млн сум", isLight: false, colorWidth: "100%" },
+
+						{ id: 1, type: 0, title: "Давлат аҳамиятидаги (4 ва ундан ортиқ тасмали) автомобиль йўллари" },
+						{ id: 2, type: 1, text: "Куриш", linearText: "18500 млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 3, type: 1, text: "Реконструкция килиш", linearText: "20000млн сум", isLight: false, colorWidth: "100%" },
+						{ id: 4, type: 1, text: "Тула таъмирлаш", linearText: "8000млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 5, type: 1, text: "Ободонлаштириш ва кукаламзорлаштириш", linearText: "1600млн сум", isLight: false, colorWidth: "100%" },
+
+						{ id: 1, type: 0, title: "Халқаро аҳамиятдаги(2-тасмали) автомобиль йўллари" },
+						{ id: 2, type: 1, text: "Куриш", linearText: "10000 млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 3, type: 1, text: "Реконструкция килиш", linearText: "9500млн сум", isLight: false, colorWidth: "100%" },
+						{ id: 4, type: 1, text: "Тула таъмирлаш", linearText: "6000млн сум", isLight: true, colorWidth: "80%" },
+						{ id: 5, type: 1, text: "Ободонлаштириш ва кукаламзорлаштириш", linearText: "1400млн сум", isLight: false, colorWidth: "100%" }
+					]
 				},
 				{
 					id: 21,
@@ -660,7 +752,7 @@ export default {
 				{
 					id: 23,
 					title: "Автомобиль йуллари кумитаси томонидан таъмирлаш таклиф этилаётган таъмирталаб йуллар",
-					right: [{ id: 1, type: 1, text: "", linearText: "", isLight: true, colorWidth: "0%" }]
+					right: [{ id: 1, type: 0, text: "", linearText: "", isLight: true, colorWidth: "0%" }]
 				},
 				{
 					id: 24,
